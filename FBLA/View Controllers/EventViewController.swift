@@ -281,7 +281,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
                                 self.performSegue(withIdentifier: "toQRScanner", sender: self)
                             }
                             else{
-                                db.collection("events").document(self.documentEvent).collection("users1").document(self.uuid).setData(["name" : firstName+lastName])
+                                db.collection("events").document(self.documentEvent).collection("users1").document(self.uuid).setData(["name" : "\(firstName) \(lastName)"])
                                 self.getSignUpStatus(eventID: self.documentEvent)
                             }
                           }
