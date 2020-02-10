@@ -3,19 +3,82 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C15A29131F0480EA6434BD /* Pods_FBLA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE6343EC1B3A943C565E466 /* Pods_FBLA.framework */; };
+		E328D96823E75B2400FB9C05 /* FBLA Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */; };
+		E328D96A23E75EDE00FB9C05 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E328D96923E75EDE00FB9C05 /* LaunchScreenViewController.swift */; };
+		E32AC5BB23F0DE7900159026 /* Esha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5AE23F0DE7900159026 /* Esha.jpg */; };
+		E32AC5BC23F0DE7900159026 /* Annie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5AF23F0DE7900159026 /* Annie.jpg */; };
+		E32AC5BD23F0DE7900159026 /* Sidd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B023F0DE7900159026 /* Sidd.jpg */; };
+		E32AC5BE23F0DE7900159026 /* Eric.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B123F0DE7900159026 /* Eric.jpg */; };
+		E32AC5BF23F0DE7900159026 /* Abhi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B223F0DE7900159026 /* Abhi.jpg */; };
+		E32AC5C023F0DE7900159026 /* HXuan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B323F0DE7900159026 /* HXuan.jpg */; };
+		E32AC5C123F0DE7900159026 /* Anika.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B423F0DE7900159026 /* Anika.jpg */; };
+		E32AC5C223F0DE7900159026 /* Rishi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B523F0DE7900159026 /* Rishi.jpg */; };
+		E32AC5C323F0DE7900159026 /* Caroline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B623F0DE7900159026 /* Caroline.jpg */; };
+		E32AC5C423F0DE7900159026 /* Justin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B723F0DE7900159026 /* Justin.jpg */; };
+		E32AC5C523F0DE7900159026 /* Varun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B823F0DE7900159026 /* Varun.jpg */; };
+		E32AC5C623F0DE7900159026 /* Varshini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5B923F0DE7900159026 /* Varshini.jpg */; };
+		E32AC5C723F0DE7900159026 /* Aakarsh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5BA23F0DE7900159026 /* Aakarsh.jpg */; };
+		E32AC5C923F0F43100159026 /* icons8-trash-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5C823F0F43100159026 /* icons8-trash-50.png */; };
+		E32B398723B58343003B7C03 /* EventSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B398623B58343003B7C03 /* EventSignUpViewController.swift */; };
+		E356576C23C00FF80036400D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E356576B23C00FF80036400D /* EventCell.swift */; };
+		E3578C0F23D22A7F009EEA10 /* 17004.png in Resources */ = {isa = PBXBuildFile; fileRef = E3578C0E23D22A7F009EEA10 /* 17004.png */; };
 		E35B87FF23B1220900A393EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B87FE23B1220900A393EF /* AppDelegate.swift */; };
 		E35B880123B1220900A393EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B880023B1220900A393EF /* SceneDelegate.swift */; };
 		E35B880323B1220900A393EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B880223B1220900A393EF /* ViewController.swift */; };
 		E35B880623B1220900A393EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B880423B1220900A393EF /* Main.storyboard */; };
 		E35B880823B1220B00A393EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B880723B1220B00A393EF /* Assets.xcassets */; };
 		E35B880B23B1220B00A393EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B880923B1220B00A393EF /* LaunchScreen.storyboard */; };
+		E35B881323B1224900A393EF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B881223B1224900A393EF /* SignUpViewController.swift */; };
+		E35B881923B1227B00A393EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B881823B1227B00A393EF /* HomeViewController.swift */; };
+		E35B881C23B13CD700A393EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E35B881B23B13CD700A393EF /* GoogleService-Info.plist */; };
+		E35B882523B1670A00A393EF /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B882423B1670A00A393EF /* EventViewController.swift */; };
+		E35B882723B168DE00A393EF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B882623B168DE00A393EF /* TabBarController.swift */; };
+		E35B882B23B17A5200A393EF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B882A23B17A5200A393EF /* Home.storyboard */; };
+		E35B882D23B17CCD00A393EF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B882C23B17CCD00A393EF /* CalendarViewController.swift */; };
+		E35B882F23B1934C00A393EF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B882E23B1934C00A393EF /* TableViewController.swift */; };
+		E35B883123B197C200A393EF /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B883023B197C200A393EF /* EventModel.swift */; };
+		E35BA8AF23ECCEE000216657 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35BA8AE23ECCEE000216657 /* ProfileViewController.swift */; };
+		E35BA8B123ECDD9B00216657 /* icons8-phone-100.png in Resources */ = {isa = PBXBuildFile; fileRef = E35BA8B023ECDD9B00216657 /* icons8-phone-100.png */; };
+		E35BA8B323ECDDA500216657 /* icons8-twitter-100.png in Resources */ = {isa = PBXBuildFile; fileRef = E35BA8B223ECDDA500216657 /* icons8-twitter-100.png */; };
+		E35BA8B523ECDDAB00216657 /* icons8-instagram-100.png in Resources */ = {isa = PBXBuildFile; fileRef = E35BA8B423ECDDAB00216657 /* icons8-instagram-100.png */; };
+		E3749FB923EDED5700AC69F3 /* icons8-ok-96.png in Resources */ = {isa = PBXBuildFile; fileRef = E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */; };
+		E37F511823C9086C00D1C5A9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37F511723C9086C00D1C5A9 /* QuestionsViewController.swift */; };
+		E39196BE23C96A7C00256F43 /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E39196BD23C96A7C00256F43 /* photo.jpeg */; };
+		E398CB9023EA74B8000DF020 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398CB8F23EA74B8000DF020 /* ContactUsViewController.swift */; };
+		E398CB9223EA780B000DF020 /* icons8-twitter-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E398CB9123EA780B000DF020 /* icons8-twitter-50.png */; };
+		E398CB9423EA78FC000DF020 /* icons8-instagram-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E398CB9323EA78FC000DF020 /* icons8-instagram-50.png */; };
+		E398CB9623EA7A7F000DF020 /* icons8-phone-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E398CB9523EA7A7F000DF020 /* icons8-phone-50.png */; };
+		E398CB9823EAEFFC000DF020 /* icons8-share-rounded-60.png in Resources */ = {isa = PBXBuildFile; fileRef = E398CB9723EAEFFC000DF020 /* icons8-share-rounded-60.png */; };
+		E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CE6343EC1B3A943C565E466 /* Pods_FBLA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF74EDA5D338690CC03CD8 /* Pods-FBLA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLA.release.xcconfig"; path = "Target Support Files/Pods-FBLA/Pods-FBLA.release.xcconfig"; sourceTree = "<group>"; };
+		E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "FBLA Logo.jpg"; sourceTree = "<group>"; };
+		E328D96923E75EDE00FB9C05 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		E32AC5AE23F0DE7900159026 /* Esha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Esha.jpg; sourceTree = "<group>"; };
+		E32AC5AF23F0DE7900159026 /* Annie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Annie.jpg; sourceTree = "<group>"; };
+		E32AC5B023F0DE7900159026 /* Sidd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sidd.jpg; sourceTree = "<group>"; };
+		E32AC5B123F0DE7900159026 /* Eric.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eric.jpg; sourceTree = "<group>"; };
+		E32AC5B223F0DE7900159026 /* Abhi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Abhi.jpg; sourceTree = "<group>"; };
+		E32AC5B323F0DE7900159026 /* HXuan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HXuan.jpg; sourceTree = "<group>"; };
+		E32AC5B423F0DE7900159026 /* Anika.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Anika.jpg; sourceTree = "<group>"; };
+		E32AC5B523F0DE7900159026 /* Rishi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rishi.jpg; sourceTree = "<group>"; };
+		E32AC5B623F0DE7900159026 /* Caroline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Caroline.jpg; sourceTree = "<group>"; };
+		E32AC5B723F0DE7900159026 /* Justin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Justin.jpg; sourceTree = "<group>"; };
+		E32AC5B823F0DE7900159026 /* Varun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Varun.jpg; sourceTree = "<group>"; };
+		E32AC5B923F0DE7900159026 /* Varshini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Varshini.jpg; sourceTree = "<group>"; };
+		E32AC5BA23F0DE7900159026 /* Aakarsh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Aakarsh.jpg; sourceTree = "<group>"; };
+		E32AC5C823F0F43100159026 /* icons8-trash-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-trash-50.png"; sourceTree = "<group>"; };
+		E32B398623B58343003B7C03 /* EventSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSignUpViewController.swift; sourceTree = "<group>"; };
+		E356576B23C00FF80036400D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		E3578C0E23D22A7F009EEA10 /* 17004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17004.png; sourceTree = "<group>"; };
 		E35B87FB23B1220900A393EF /* FBLA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B87FE23B1220900A393EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35B880023B1220900A393EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +87,29 @@
 		E35B880723B1220B00A393EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35B880A23B1220B00A393EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35B880C23B1220B00A393EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E35B881223B1224900A393EF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E35B881823B1227B00A393EF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E35B881B23B13CD700A393EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E35B882423B1670A00A393EF /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		E35B882623B168DE00A393EF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E35B882A23B17A5200A393EF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E35B882C23B17CCD00A393EF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E35B882E23B1934C00A393EF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E35B883023B197C200A393EF /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		E35BA8AE23ECCEE000216657 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E35BA8B023ECDD9B00216657 /* icons8-phone-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-phone-100.png"; sourceTree = "<group>"; };
+		E35BA8B223ECDDA500216657 /* icons8-twitter-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter-100.png"; sourceTree = "<group>"; };
+		E35BA8B423ECDDAB00216657 /* icons8-instagram-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-instagram-100.png"; sourceTree = "<group>"; };
+		E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ok-96.png"; sourceTree = "<group>"; };
+		E37F511723C9086C00D1C5A9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		E39196BD23C96A7C00256F43 /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
+		E398CB8F23EA74B8000DF020 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		E398CB9123EA780B000DF020 /* icons8-twitter-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter-50.png"; sourceTree = "<group>"; };
+		E398CB9323EA78FC000DF020 /* icons8-instagram-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-instagram-50.png"; sourceTree = "<group>"; };
+		E398CB9523EA7A7F000DF020 /* icons8-phone-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-phone-50.png"; sourceTree = "<group>"; };
+		E398CB9723EAEFFC000DF020 /* icons8-share-rounded-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-share-rounded-60.png"; sourceTree = "<group>"; };
+		E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		E8AD6C30AEB97E796BB8B3A1 /* Pods-FBLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLA.debug.xcconfig"; path = "Target Support Files/Pods-FBLA/Pods-FBLA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +117,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C15A29131F0480EA6434BD /* Pods_FBLA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21B05ECF062B747899B62836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CE6343EC1B3A943C565E466 /* Pods_FBLA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E32AC5AD23F0DE7900159026 /* Officer Photos */ = {
+			isa = PBXGroup;
+			children = (
+				E32AC5AE23F0DE7900159026 /* Esha.jpg */,
+				E32AC5AF23F0DE7900159026 /* Annie.jpg */,
+				E32AC5B023F0DE7900159026 /* Sidd.jpg */,
+				E32AC5B123F0DE7900159026 /* Eric.jpg */,
+				E32AC5B223F0DE7900159026 /* Abhi.jpg */,
+				E32AC5B323F0DE7900159026 /* HXuan.jpg */,
+				E32AC5B423F0DE7900159026 /* Anika.jpg */,
+				E32AC5B523F0DE7900159026 /* Rishi.jpg */,
+				E32AC5B623F0DE7900159026 /* Caroline.jpg */,
+				E32AC5B723F0DE7900159026 /* Justin.jpg */,
+				E32AC5B823F0DE7900159026 /* Varun.jpg */,
+				E32AC5B923F0DE7900159026 /* Varshini.jpg */,
+				E32AC5BA23F0DE7900159026 /* Aakarsh.jpg */,
+			);
+			path = "Officer Photos";
+			sourceTree = "<group>";
+		};
 		E35B87F223B1220900A393EF = {
 			isa = PBXGroup;
 			children = (
 				E35B87FD23B1220900A393EF /* FBLA */,
 				E35B87FC23B1220900A393EF /* Products */,
+				E586C16EA27CB5548C7297F7 /* Pods */,
+				21B05ECF062B747899B62836 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +173,77 @@
 		E35B87FD23B1220900A393EF /* FBLA */ = {
 			isa = PBXGroup;
 			children = (
+				E39196BA23C9697400256F43 /* Assets */,
+				E35B882123B163B200A393EF /* Storyboards */,
+				E35B881A23B1229D00A393EF /* View Controllers */,
 				E35B87FE23B1220900A393EF /* AppDelegate.swift */,
 				E35B880023B1220900A393EF /* SceneDelegate.swift */,
-				E35B880223B1220900A393EF /* ViewController.swift */,
-				E35B880423B1220900A393EF /* Main.storyboard */,
 				E35B880723B1220B00A393EF /* Assets.xcassets */,
-				E35B880923B1220B00A393EF /* LaunchScreen.storyboard */,
+				E35B881B23B13CD700A393EF /* GoogleService-Info.plist */,
 				E35B880C23B1220B00A393EF /* Info.plist */,
+				E35B882623B168DE00A393EF /* TabBarController.swift */,
+				E35B883023B197C200A393EF /* EventModel.swift */,
+				E356576B23C00FF80036400D /* EventCell.swift */,
 			);
 			path = FBLA;
+			sourceTree = "<group>";
+		};
+		E35B881A23B1229D00A393EF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E35B881223B1224900A393EF /* SignUpViewController.swift */,
+				E35B880223B1220900A393EF /* ViewController.swift */,
+				E35B881823B1227B00A393EF /* HomeViewController.swift */,
+				E35B882423B1670A00A393EF /* EventViewController.swift */,
+				E35B882C23B17CCD00A393EF /* CalendarViewController.swift */,
+				E35B882E23B1934C00A393EF /* TableViewController.swift */,
+				E32B398623B58343003B7C03 /* EventSignUpViewController.swift */,
+				E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */,
+				E37F511723C9086C00D1C5A9 /* QuestionsViewController.swift */,
+				E328D96923E75EDE00FB9C05 /* LaunchScreenViewController.swift */,
+				E398CB8F23EA74B8000DF020 /* ContactUsViewController.swift */,
+				E35BA8AE23ECCEE000216657 /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E35B882123B163B200A393EF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E35B880423B1220900A393EF /* Main.storyboard */,
+				E35B880923B1220B00A393EF /* LaunchScreen.storyboard */,
+				E35B882A23B17A5200A393EF /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E39196BA23C9697400256F43 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E398CB9323EA78FC000DF020 /* icons8-instagram-50.png */,
+				E398CB9123EA780B000DF020 /* icons8-twitter-50.png */,
+				E32AC5AD23F0DE7900159026 /* Officer Photos */,
+				E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */,
+				E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */,
+				E39196BD23C96A7C00256F43 /* photo.jpeg */,
+				E35BA8B023ECDD9B00216657 /* icons8-phone-100.png */,
+				E35BA8B423ECDDAB00216657 /* icons8-instagram-100.png */,
+				E32AC5C823F0F43100159026 /* icons8-trash-50.png */,
+				E35BA8B223ECDDA500216657 /* icons8-twitter-100.png */,
+				E3578C0E23D22A7F009EEA10 /* 17004.png */,
+				E398CB9723EAEFFC000DF020 /* icons8-share-rounded-60.png */,
+				E398CB9523EA7A7F000DF020 /* icons8-phone-50.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E586C16EA27CB5548C7297F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8AD6C30AEB97E796BB8B3A1 /* Pods-FBLA.debug.xcconfig */,
+				E2DF74EDA5D338690CC03CD8 /* Pods-FBLA.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E35B880F23B1220B00A393EF /* Build configuration list for PBXNativeTarget "FBLA" */;
 			buildPhases = (
+				BC711145F5B25C1732FC7DB3 /* [CP] Check Pods Manifest.lock */,
 				E35B87F723B1220900A393EF /* Sources */,
 				E35B87F823B1220900A393EF /* Frameworks */,
 				E35B87F923B1220900A393EF /* Resources */,
+				742F28C1CFDB6EB0877BCB2C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,13 +306,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35BA8B123ECDD9B00216657 /* icons8-phone-100.png in Resources */,
+				E39196BE23C96A7C00256F43 /* photo.jpeg in Resources */,
+				E32AC5C523F0DE7900159026 /* Varun.jpg in Resources */,
+				E32AC5BE23F0DE7900159026 /* Eric.jpg in Resources */,
 				E35B880B23B1220B00A393EF /* LaunchScreen.storyboard in Resources */,
+				E32AC5C023F0DE7900159026 /* HXuan.jpg in Resources */,
+				E32AC5C123F0DE7900159026 /* Anika.jpg in Resources */,
+				E32AC5C323F0DE7900159026 /* Caroline.jpg in Resources */,
+				E328D96823E75B2400FB9C05 /* FBLA Logo.jpg in Resources */,
+				E3578C0F23D22A7F009EEA10 /* 17004.png in Resources */,
+				E32AC5BD23F0DE7900159026 /* Sidd.jpg in Resources */,
+				E32AC5C623F0DE7900159026 /* Varshini.jpg in Resources */,
+				E35BA8B523ECDDAB00216657 /* icons8-instagram-100.png in Resources */,
+				E32AC5BF23F0DE7900159026 /* Abhi.jpg in Resources */,
+				E32AC5C423F0DE7900159026 /* Justin.jpg in Resources */,
+				E32AC5C923F0F43100159026 /* icons8-trash-50.png in Resources */,
+				E398CB9223EA780B000DF020 /* icons8-twitter-50.png in Resources */,
+				E35B882B23B17A5200A393EF /* Home.storyboard in Resources */,
+				E32AC5BB23F0DE7900159026 /* Esha.jpg in Resources */,
+				E32AC5BC23F0DE7900159026 /* Annie.jpg in Resources */,
+				E398CB9623EA7A7F000DF020 /* icons8-phone-50.png in Resources */,
+				E35B881C23B13CD700A393EF /* GoogleService-Info.plist in Resources */,
+				E3749FB923EDED5700AC69F3 /* icons8-ok-96.png in Resources */,
+				E398CB9423EA78FC000DF020 /* icons8-instagram-50.png in Resources */,
 				E35B880823B1220B00A393EF /* Assets.xcassets in Resources */,
+				E35BA8B323ECDDA500216657 /* icons8-twitter-100.png in Resources */,
 				E35B880623B1220900A393EF /* Main.storyboard in Resources */,
+				E398CB9823EAEFFC000DF020 /* icons8-share-rounded-60.png in Resources */,
+				E32AC5C223F0DE7900159026 /* Rishi.jpg in Resources */,
+				E32AC5C723F0DE7900159026 /* Aakarsh.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		742F28C1CFDB6EB0877BCB2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBLA/Pods-FBLA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBLA/Pods-FBLA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FBLA/Pods-FBLA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC711145F5B25C1732FC7DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBLA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E35B87F723B1220900A393EF /* Sources */ = {
@@ -139,8 +389,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35B880323B1220900A393EF /* ViewController.swift in Sources */,
+				E35B882723B168DE00A393EF /* TabBarController.swift in Sources */,
 				E35B87FF23B1220900A393EF /* AppDelegate.swift in Sources */,
+				E35B882523B1670A00A393EF /* EventViewController.swift in Sources */,
+				E328D96A23E75EDE00FB9C05 /* LaunchScreenViewController.swift in Sources */,
+				E35B881323B1224900A393EF /* SignUpViewController.swift in Sources */,
+				E35BA8AF23ECCEE000216657 /* ProfileViewController.swift in Sources */,
+				E35B882D23B17CCD00A393EF /* CalendarViewController.swift in Sources */,
+				E356576C23C00FF80036400D /* EventCell.swift in Sources */,
+				E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */,
 				E35B880123B1220900A393EF /* SceneDelegate.swift in Sources */,
+				E35B882F23B1934C00A393EF /* TableViewController.swift in Sources */,
+				E32B398723B58343003B7C03 /* EventSignUpViewController.swift in Sources */,
+				E37F511823C9086C00D1C5A9 /* QuestionsViewController.swift in Sources */,
+				E35B883123B197C200A393EF /* EventModel.swift in Sources */,
+				E35B881923B1227B00A393EF /* HomeViewController.swift in Sources */,
+				E398CB9023EA74B8000DF020 /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +546,21 @@
 		};
 		E35B881023B1220B00A393EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8AD6C30AEB97E796BB8B3A1 /* Pods-FBLA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 367GHLNU79;
 				INFOPLIST_FILE = FBLA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hdhulipudi.FBLA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +568,21 @@
 		};
 		E35B881123B1220B00A393EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DF74EDA5D338690CC03CD8 /* Pods-FBLA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 367GHLNU79;
 				INFOPLIST_FILE = FBLA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hdhulipudi.FBLA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
