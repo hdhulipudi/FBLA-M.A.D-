@@ -75,7 +75,7 @@ class ProfileViewController: UIViewController {
                         let firstName:String = document.get("firstName") as! String
                         let lastName:String = document.get("lastName") as! String
                         
-                        self.nameLabel.text = firstName+lastName
+                        self.nameLabel.text = ("\(firstName) \(lastName)")
                         self.phoneNumberLabel.text = document.get("phoneNumber") as? String
                         self.emailLabel.text = document.get("email") as? String
                         //Message displayed depending on if user is an fbla member

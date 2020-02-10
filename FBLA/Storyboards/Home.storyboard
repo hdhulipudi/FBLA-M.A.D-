@@ -24,6 +24,12 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
                                         <color key="value" red="0.56727397440000005" green="0.1606036723" blue="0.2039135098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventSelectionColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="eventDefaultColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="I7p-yK-OX9" id="dbm-Wh-tkc"/>
@@ -512,7 +518,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="Qfo-lb-xPh">
-                                        <rect key="frame" x="0.0" y="842" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="908" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qfo-lb-xPh" id="yHc-53-b8q">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -546,7 +552,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="g8I-0Y-DEc">
-                                        <rect key="frame" x="0.0" y="952" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="1018" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g8I-0Y-DEc" id="Ru2-pd-sWK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -580,7 +586,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="8bI-h5-DHT">
-                                        <rect key="frame" x="0.0" y="1062" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="1128" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8bI-h5-DHT" id="5dh-tX-muj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -614,7 +620,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="y7O-aK-XHt">
-                                        <rect key="frame" x="0.0" y="1172" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="1238" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y7O-aK-XHt" id="nZo-K1-Znt">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -1100,14 +1106,14 @@ b) Congrats! You are now an official Lambert FBLA member!
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXM-5B-UWO">
                                 <rect key="frame" x="42" y="418" width="331" height="378"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">a)FBLA has 2 or 3 levels of competitive events depending on which event you are doing. 
+                                <string key="text">a)FBLA has 2 or 3 levels of competitive events depending on which event you are doing. 
 
 b)Regional Leadership Conference - This is the most regional level of competition and you are divided by region in which you are competing against. You can go to the FBLA website to learn more about the Regional Leadership Conference, the type of events you can partake in as well as how the regions are divided. The top competitors that place at the Regional Leadership Conference will move on to the State Leadership Conference.
 
 c)State Leadership Conference - These are competitive events that occur at the state level. Even though there are numerous events that take place, some of them require qualification at the Regional level. Make sure to check the official FBLA website to learn more about which events require regional qualification and which events are straight to state.  The top competitors that place at State Leadership Conference will move on to the National Leadership Conference.
 
 d)National Leadership Conference - This is the highest level of competition amongst the FBLA community. At NLC you will be competing against top performers around the country in your respective event. Make sure to check the FBLA website to learn more about the National Leadership Conference. Hope to see you there!
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1350,7 +1356,7 @@ FBLA is an important partner in the success of school-to-work programs, business
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mET-Wg-Tb5">
-                                <rect key="frame" x="100" y="175" width="221" height="48"/>
+                                <rect key="frame" x="20" y="175" width="374" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1388,48 +1394,48 @@ FBLA is an important partner in the success of school-to-work programs, business
                                     <action selector="signOutButtonTapped:" destination="TJQ-ek-EI2" eventType="touchUpInside" id="BHr-qT-3ok"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cg-hq-9Nx">
-                                <rect key="frame" x="184" y="449.5" width="46" height="52.5"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="fblaSignUpTapped:" destination="TJQ-ek-EI2" eventType="touchUpInside" id="Lxt-9M-82X"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egk-mX-rzX">
-                                <rect key="frame" x="189" y="378.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egk-mX-rzX">
+                                <rect key="frame" x="78" y="378.5" width="264" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cg-hq-9Nx">
+                                <rect key="frame" x="148" y="444" width="124" height="53"/>
+                                <state key="normal" title="Sign Up for FBLA"/>
+                                <connections>
+                                    <action selector="fblaSignUpTapped:" destination="TJQ-ek-EI2" eventType="touchUpInside" id="Lxt-9M-82X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="Egk-mX-rzX" secondAttribute="trailing" constant="183" id="0vP-oX-gfc"/>
+                            <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="Egk-mX-rzX" secondAttribute="trailing" constant="72" id="0vP-oX-gfc"/>
                             <constraint firstItem="WW4-aZ-4ON" firstAttribute="leading" secondItem="3TL-ko-vVk" secondAttribute="leading" id="DMe-iD-cDg"/>
                             <constraint firstItem="dIi-DT-jbi" firstAttribute="bottom" secondItem="jPE-hG-xmO" secondAttribute="bottom" constant="193" id="DZh-ob-MDO"/>
-                            <constraint firstItem="jPE-hG-xmO" firstAttribute="top" secondItem="4Cg-hq-9Nx" secondAttribute="bottom" constant="67" id="Fad-MZ-8nN"/>
+                            <constraint firstItem="jPE-hG-xmO" firstAttribute="top" secondItem="4Cg-hq-9Nx" secondAttribute="bottom" constant="72" id="Fad-MZ-8nN"/>
                             <constraint firstItem="WW4-aZ-4ON" firstAttribute="trailing" secondItem="3TL-ko-vVk" secondAttribute="trailing" id="Fct-7E-gQs"/>
                             <constraint firstItem="4y7-RO-2cv" firstAttribute="top" secondItem="dIi-DT-jbi" secondAttribute="top" constant="88" id="GiX-P1-wiD"/>
                             <constraint firstItem="Egk-mX-rzX" firstAttribute="top" secondItem="3TL-ko-vVk" secondAttribute="bottom" constant="33" id="JzE-hx-tDL"/>
                             <constraint firstItem="4y7-RO-2cv" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="141" id="LCh-p7-xkw"/>
-                            <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="mET-Wg-Tb5" secondAttribute="trailing" constant="93" id="Lrf-nV-YS0"/>
+                            <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="mET-Wg-Tb5" secondAttribute="trailing" constant="20" id="Lrf-nV-YS0"/>
                             <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="4y7-RO-2cv" secondAttribute="trailing" constant="134" id="LtA-kK-sMt"/>
                             <constraint firstItem="jPE-hG-xmO" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="145" id="TnY-5w-0l2"/>
                             <constraint firstItem="3TL-ko-vVk" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="96" id="XFg-Ai-Q1B"/>
                             <constraint firstItem="WW4-aZ-4ON" firstAttribute="top" secondItem="mET-Wg-Tb5" secondAttribute="bottom" constant="39" id="ZVT-vC-rxl"/>
                             <constraint firstItem="3TL-ko-vVk" firstAttribute="top" secondItem="WW4-aZ-4ON" secondAttribute="bottom" constant="24" id="bD8-2Z-gYv"/>
                             <constraint firstItem="dIi-DT-jbi" firstAttribute="bottom" secondItem="4y7-RO-2cv" secondAttribute="bottom" constant="660" id="bID-Tp-Cdc"/>
-                            <constraint firstItem="4Cg-hq-9Nx" firstAttribute="top" secondItem="Egk-mX-rzX" secondAttribute="bottom" constant="50" id="bpR-z1-Ver"/>
-                            <constraint firstItem="mET-Wg-Tb5" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="100" id="eYk-Ej-fsG"/>
+                            <constraint firstItem="4Cg-hq-9Nx" firstAttribute="top" secondItem="Egk-mX-rzX" secondAttribute="bottom" constant="44.5" id="bpR-z1-Ver"/>
+                            <constraint firstItem="mET-Wg-Tb5" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="20" id="eYk-Ej-fsG"/>
                             <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="3TL-ko-vVk" secondAttribute="trailing" constant="90" id="ej1-E4-5Wp"/>
                             <constraint firstItem="dIi-DT-jbi" firstAttribute="bottom" secondItem="mET-Wg-Tb5" secondAttribute="bottom" constant="585" id="foc-oJ-YmJ"/>
                             <constraint firstItem="jPE-hG-xmO" firstAttribute="centerX" secondItem="Egk-mX-rzX" secondAttribute="centerX" id="hB2-xM-fSo"/>
-                            <constraint firstItem="Egk-mX-rzX" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="189" id="kDj-sb-JpN"/>
-                            <constraint firstItem="4Cg-hq-9Nx" firstAttribute="top" secondItem="Egk-mX-rzX" secondAttribute="bottom" constant="50" id="nLP-73-tn6"/>
-                            <constraint firstItem="4Cg-hq-9Nx" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="184" id="ruB-d2-xVU"/>
+                            <constraint firstItem="Egk-mX-rzX" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="78" id="kDj-sb-JpN"/>
+                            <constraint firstItem="4Cg-hq-9Nx" firstAttribute="top" secondItem="Egk-mX-rzX" secondAttribute="bottom" constant="44.5" id="nLP-73-tn6"/>
+                            <constraint firstItem="4Cg-hq-9Nx" firstAttribute="leading" secondItem="dIi-DT-jbi" secondAttribute="leading" constant="148" id="ruB-d2-xVU"/>
                             <constraint firstItem="mET-Wg-Tb5" firstAttribute="top" secondItem="4y7-RO-2cv" secondAttribute="bottom" constant="27" id="xwb-8F-wzz"/>
                             <constraint firstItem="Egk-mX-rzX" firstAttribute="top" secondItem="3TL-ko-vVk" secondAttribute="bottom" constant="33" id="yHq-io-pGQ"/>
-                            <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="4Cg-hq-9Nx" secondAttribute="trailing" constant="184" id="yyM-eB-3bS"/>
+                            <constraint firstItem="dIi-DT-jbi" firstAttribute="trailing" secondItem="4Cg-hq-9Nx" secondAttribute="trailing" constant="142" id="yyM-eB-3bS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dIi-DT-jbi"/>
                     </view>
