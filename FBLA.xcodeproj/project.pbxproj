@@ -55,6 +55,8 @@
 		E398CB9623EA7A7F000DF020 /* icons8-phone-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E398CB9523EA7A7F000DF020 /* icons8-phone-50.png */; };
 		E398CB9823EAEFFC000DF020 /* icons8-share-rounded-60.png in Resources */ = {isa = PBXBuildFile; fileRef = E398CB9723EAEFFC000DF020 /* icons8-share-rounded-60.png */; };
 		E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */; };
+		E3C717A123F20B0600BAFD2F /* FBLA-Color-web.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */; };
+		E3C717A323F20CBA00BAFD2F /* lhs_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A223F20CB900BAFD2F /* lhs_logo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +111,8 @@
 		E398CB9523EA7A7F000DF020 /* icons8-phone-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-phone-50.png"; sourceTree = "<group>"; };
 		E398CB9723EAEFFC000DF020 /* icons8-share-rounded-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-share-rounded-60.png"; sourceTree = "<group>"; };
 		E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBLA-Color-web.png"; sourceTree = "<group>"; };
+		E3C717A223F20CB900BAFD2F /* lhs_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lhs_logo.gif; sourceTree = "<group>"; };
 		E8AD6C30AEB97E796BB8B3A1 /* Pods-FBLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLA.debug.xcconfig"; path = "Target Support Files/Pods-FBLA/Pods-FBLA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,8 +224,10 @@
 		E39196BA23C9697400256F43 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */,
 				E398CB9323EA78FC000DF020 /* icons8-instagram-50.png */,
 				E398CB9123EA780B000DF020 /* icons8-twitter-50.png */,
+				E3C717A223F20CB900BAFD2F /* lhs_logo.gif */,
 				E32AC5AD23F0DE7900159026 /* Officer Photos */,
 				E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */,
 				E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */,
@@ -313,6 +319,7 @@
 				E35B880B23B1220B00A393EF /* LaunchScreen.storyboard in Resources */,
 				E32AC5C023F0DE7900159026 /* HXuan.jpg in Resources */,
 				E32AC5C123F0DE7900159026 /* Anika.jpg in Resources */,
+				E3C717A323F20CBA00BAFD2F /* lhs_logo.gif in Resources */,
 				E32AC5C323F0DE7900159026 /* Caroline.jpg in Resources */,
 				E328D96823E75B2400FB9C05 /* FBLA Logo.jpg in Resources */,
 				E3578C0F23D22A7F009EEA10 /* 17004.png in Resources */,
@@ -330,6 +337,7 @@
 				E35B881C23B13CD700A393EF /* GoogleService-Info.plist in Resources */,
 				E3749FB923EDED5700AC69F3 /* icons8-ok-96.png in Resources */,
 				E398CB9423EA78FC000DF020 /* icons8-instagram-50.png in Resources */,
+				E3C717A123F20B0600BAFD2F /* FBLA-Color-web.png in Resources */,
 				E35B880823B1220B00A393EF /* Assets.xcassets in Resources */,
 				E35BA8B323ECDDA500216657 /* icons8-twitter-100.png in Resources */,
 				E35B880623B1220900A393EF /* Main.storyboard in Resources */,

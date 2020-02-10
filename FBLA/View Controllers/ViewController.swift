@@ -18,9 +18,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+      
       
         setUpElements()
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -56,6 +59,7 @@ class ViewController: UIViewController {
             }
             else{
                 //If succesful the app will transition to the home screen
+                
                 self.transitionToHome()
                 
                 

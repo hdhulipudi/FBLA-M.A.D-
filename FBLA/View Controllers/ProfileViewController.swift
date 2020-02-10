@@ -40,6 +40,7 @@ class ProfileViewController: UIViewController {
                
                view.window?.rootViewController = viewController
                view.window?.makeKeyAndVisible()
+       
     }
     // MARK: - FBLA Sign UP
 
