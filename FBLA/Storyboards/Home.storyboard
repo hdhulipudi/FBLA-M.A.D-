@@ -1281,10 +1281,10 @@ d)National Leadership Conference - This is the highest level of competition amon
                                                     <rect key="frame" x="20" y="11" width="374" height="433"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <mutableString key="text">FBLA-PPL stands for Future Business Leaders of America-Phi Beta Lambda, Inc. FBLA is a nonprofit student organization committed to preparing today’s students for success in business leadership— the premier organization for student leaders. It is the largest student business organization in the world with more than 250,000 members, and Georgia FBLA chapter alone has over 25,000 members, being the largest in the nation.
+                                                    <string key="text">FBLA-PPL stands for Future Business Leaders of America-Phi Beta Lambda, Inc. FBLA is a nonprofit student organization committed to preparing today’s students for success in business leadership— the premier organization for student leaders. It is the largest student business organization in the world with more than 250,000 members, and Georgia FBLA chapter alone has over 25,000 members, being the largest in the nation.
 FBLA is an important partner in the success of school-to-work programs, business education curriculums, and student leadership development. FBLA is recognized by the U.S. Departments of Education and Labor as an integral part of a co-curricular approach to business and leadership education.
  
-</mutableString>
+</string>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1360,16 +1360,22 @@ FBLA is an important partner in the success of school-to-work programs, business
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="234" id="RcE-Ve-a2e">
-                                        <rect key="frame" x="0.0" y="1264" width="414" height="234"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="RcE-Ve-a2e">
+                                        <rect key="frame" x="0.0" y="1264" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RcE-Ve-a2e" id="dda-a5-cF3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Messages Image(2925471728).jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="wR3-I6-6qu">
+                                                    <rect key="frame" x="100" y="13" width="215" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="230" id="E6B-Qm-pDK">
-                                        <rect key="frame" x="0.0" y="1498" width="414" height="230"/>
+                                        <rect key="frame" x="0.0" y="1414" width="414" height="230"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E6B-Qm-pDK" id="eQZ-1s-F3U">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="230"/>
@@ -1606,6 +1612,7 @@ FBLA is an important partner in the success of school-to-work programs, business
         <image name="FBLA-Color-web.png" width="819" height="653"/>
         <image name="HXuan.jpg" width="730" height="729"/>
         <image name="Justin.jpg" width="730" height="730"/>
+        <image name="Messages Image(2925471728).jpeg" width="353" height="450"/>
         <image name="Rishi.jpg" width="730" height="730"/>
         <image name="Sidd.jpg" width="730" height="730"/>
         <image name="Varshini.jpg" width="730" height="730"/>

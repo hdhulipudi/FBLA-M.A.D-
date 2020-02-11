@@ -57,6 +57,7 @@
 		E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */; };
 		E3C717A123F20B0600BAFD2F /* FBLA-Color-web.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */; };
 		E3C717A323F20CBA00BAFD2F /* lhs_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A223F20CB900BAFD2F /* lhs_logo.gif */; };
+		E3C717A523F242CA00BAFD2F /* Messages Image(2925471728).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A423F242CA00BAFD2F /* Messages Image(2925471728).jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		E3BEA30123BFBCAA00B118BC /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBLA-Color-web.png"; sourceTree = "<group>"; };
 		E3C717A223F20CB900BAFD2F /* lhs_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lhs_logo.gif; sourceTree = "<group>"; };
+		E3C717A423F242CA00BAFD2F /* Messages Image(2925471728).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Messages Image(2925471728).jpeg"; sourceTree = "<group>"; };
 		E8AD6C30AEB97E796BB8B3A1 /* Pods-FBLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLA.debug.xcconfig"; path = "Target Support Files/Pods-FBLA/Pods-FBLA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 				E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */,
 				E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */,
 				E39196BD23C96A7C00256F43 /* photo.jpeg */,
+				E3C717A423F242CA00BAFD2F /* Messages Image(2925471728).jpeg */,
 				E35BA8B023ECDD9B00216657 /* icons8-phone-100.png */,
 				E35BA8B423ECDDAB00216657 /* icons8-instagram-100.png */,
 				E32AC5C823F0F43100159026 /* icons8-trash-50.png */,
@@ -320,6 +323,7 @@
 				E32AC5C023F0DE7900159026 /* HXuan.jpg in Resources */,
 				E32AC5C123F0DE7900159026 /* Anika.jpg in Resources */,
 				E3C717A323F20CBA00BAFD2F /* lhs_logo.gif in Resources */,
+				E3C717A523F242CA00BAFD2F /* Messages Image(2925471728).jpeg in Resources */,
 				E32AC5C323F0DE7900159026 /* Caroline.jpg in Resources */,
 				E328D96823E75B2400FB9C05 /* FBLA Logo.jpg in Resources */,
 				E3578C0F23D22A7F009EEA10 /* 17004.png in Resources */,
