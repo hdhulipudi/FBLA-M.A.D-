@@ -28,6 +28,23 @@ class ContactUsViewController: UIViewController {
     @IBAction func tappedLink2(_ sender: Any) {
         UIApplication.shared.open(NSURL(string: "https://www.fbla-pbl.org")! as URL)
     }
+    
+    
+    @IBAction func tappedLink3(_ sender: Any) {
+        
+        
+        UIApplication.shared.open(NSURL(string: "https://www.fbla-pbl.org/fbla/competitive-events/")! as URL)
+        
+        
+        
+        
+        
+    }
+    
+    
+
+    
+    
     @IBAction func twitterTapped(_ sender: Any) {
         UIApplication.shared.open(NSURL(string: "https://twitter.com/FBLA_National?s=20")! as URL)
     }

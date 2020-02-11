@@ -113,34 +113,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="y7q-KK-I05">
-                                <rect key="frame" x="48" y="167.5" width="125" height="41"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="laP-Wa-Aei">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="41"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="School Website:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvW-vd-CqB">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official Website:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kX2-jt-zSM">
-                                                <rect key="frame" x="0.0" y="20.5" width="125" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNa-TV-ie7">
-                                <rect key="frame" x="181" y="178" width="167" height="41"/>
-                                <state key="normal" title="https://www.fbla-pbl.org"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-Gv-Bwi">
+                                <rect key="frame" x="141" y="201" width="133" height="41"/>
+                                <state key="normal" title="Competitive Events"/>
                                 <connections>
-                                    <action selector="tappedLink2:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="l74-g2-8iU"/>
-                                    <action selector="tappedLink:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="52D-AK-wjr"/>
+                                    <action selector="tappedLink2:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="E9x-Pv-Lf6"/>
+                                    <action selector="tappedLink3:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="88P-Em-dVF"/>
+                                    <action selector="tappedLink:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="KG2-G0-2BE"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="WWQ-hD-RCn">
@@ -170,15 +149,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE3-9X-M8g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE3-9X-M8g">
                                 <rect key="frame" x="20" y="88" width="187" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jc-SW-2II">
-                                <rect key="frame" x="175" y="163" width="167" height="30"/>
-                                <state key="normal" title="https://lambertfbla.org"/>
+                                <rect key="frame" x="101" y="163" width="212" height="30"/>
+                                <state key="normal" title="Lambert FBLA Website"/>
                                 <connections>
                                     <action selector="tappedLink:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="YNi-ay-wjg"/>
                                 </connections>
@@ -199,27 +179,32 @@
                                     <segue destination="29X-bR-XiO" kind="embed" id="Aw5-MJ-SDk"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNa-TV-ie7">
+                                <rect key="frame" x="159" y="179" width="96" height="41"/>
+                                <state key="normal" title="FBLA Website"/>
+                                <connections>
+                                    <action selector="tappedLink2:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="l74-g2-8iU"/>
+                                    <action selector="tappedLink:" destination="Kya-2I-7Xa" eventType="touchUpInside" id="52D-AK-wjr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="y7q-KK-I05" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="48" id="02s-4G-XYw"/>
-                            <constraint firstItem="y7q-KK-I05" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="top" constant="167.5" id="7PP-Wb-3fc"/>
-                            <constraint firstItem="01X-hs-OJg" firstAttribute="bottom" secondItem="VNa-TV-ie7" secondAttribute="bottom" constant="594" id="7hK-Zv-LsI"/>
-                            <constraint firstItem="y7q-KK-I05" firstAttribute="leading" secondItem="xE3-9X-M8g" secondAttribute="leading" constant="28" id="8xU-nQ-Cx4"/>
-                            <constraint firstItem="y7q-KK-I05" firstAttribute="top" secondItem="xE3-9X-M8g" secondAttribute="bottom" constant="36.5" id="GlW-ZJ-OtQ"/>
+                            <constraint firstItem="01X-hs-OJg" firstAttribute="bottom" secondItem="VNa-TV-ie7" secondAttribute="bottom" constant="593" id="7hK-Zv-LsI"/>
+                            <constraint firstItem="WWQ-hD-RCn" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="topMargin" constant="250" id="Cqc-dz-CKq"/>
+                            <constraint firstItem="6c6-Gv-Bwi" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="topMargin" constant="157" id="GsN-tx-STc"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="rbi-oR-Cft" secondAttribute="trailing" constant="95" id="O7m-9t-MAf"/>
                             <constraint firstItem="rbi-oR-Cft" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="95" id="OkE-7P-mp2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6c6-Gv-Bwi" secondAttribute="bottom" constant="571" id="RE1-wh-Lw6"/>
                             <constraint firstItem="8Jc-SW-2II" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="119" id="RGf-0M-Ceo"/>
-                            <constraint firstItem="WWQ-hD-RCn" firstAttribute="leading" secondItem="y7q-KK-I05" secondAttribute="leading" id="SnD-6I-YLs"/>
-                            <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="VNa-TV-ie7" secondAttribute="trailing" constant="66" id="T0K-XZ-iRb"/>
-                            <constraint firstItem="VNa-TV-ie7" firstAttribute="leading" secondItem="y7q-KK-I05" secondAttribute="trailing" constant="8" id="VG2-MZ-WOS"/>
-                            <constraint firstItem="WWQ-hD-RCn" firstAttribute="top" secondItem="y7q-KK-I05" secondAttribute="bottom" constant="85.5" id="WeB-bT-XHZ"/>
+                            <constraint firstItem="8Jc-SW-2II" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="101" id="S44-36-ZPL"/>
+                            <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="VNa-TV-ie7" secondAttribute="trailing" constant="159" id="T0K-XZ-iRb"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="bottom" secondItem="8Jc-SW-2II" secondAttribute="bottom" constant="620" id="YbO-Qy-dBR"/>
                             <constraint firstItem="WWQ-hD-RCn" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="48" id="a9I-aW-2Hy"/>
                             <constraint firstItem="rbi-oR-Cft" firstAttribute="top" secondItem="WWQ-hD-RCn" secondAttribute="bottom" constant="54" id="aeh-9X-n98"/>
-                            <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="8Jc-SW-2II" secondAttribute="trailing" constant="72" id="e4t-sU-CAb"/>
-                            <constraint firstItem="8Jc-SW-2II" firstAttribute="leading" secondItem="y7q-KK-I05" secondAttribute="trailing" constant="2" id="hmy-HR-PbF"/>
-                            <constraint firstItem="VNa-TV-ie7" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="134" id="pEJ-fj-M2h"/>
+                            <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="8Jc-SW-2II" secondAttribute="trailing" constant="101" id="e4t-sU-CAb"/>
+                            <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="6c6-Gv-Bwi" secondAttribute="trailing" constant="140" id="nfP-LF-Quy"/>
+                            <constraint firstItem="VNa-TV-ie7" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="135" id="pEJ-fj-M2h"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="WWQ-hD-RCn" secondAttribute="trailing" constant="48" id="z3w-9Z-0wi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="01X-hs-OJg"/>
