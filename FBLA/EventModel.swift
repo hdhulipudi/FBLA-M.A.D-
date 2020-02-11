@@ -35,11 +35,13 @@ struct Event {
 //Data Model for the User Table View
 struct UserList{
     var firstName:String
+    var lastName:String
     
     
     var dictionary:[String:Any] {
         return [
-            "name": firstName
+            "firstName": firstName,
+            "lastName":lastName
             
             
         ]
@@ -74,9 +76,10 @@ extension Event : DocumentSerializable {
 }
 extension UserList : DocumentSerializable{
     init?(dictionary: [String : Any]) {
-        guard let firstName = dictionary["name"] as? String
+        guard let firstName = dictionary["firstName"] as? String,
+            let lastName = dictionary["lastName"] as? String
         else {return nil}
-        self.init(firstName: firstName)
+        self.init(firstName: firstName,lastName:lastName)
     }
     
 }

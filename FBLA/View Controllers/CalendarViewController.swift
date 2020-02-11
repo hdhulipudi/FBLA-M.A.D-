@@ -59,7 +59,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     }
-    // MARK: - Calendar Dunctions
+    // MARK: - Calendar Functions
 
    //Calendar function to run the queryDate method for the date selected
     func calendar(_ calendar: FSCalendar, didSelect selectedDate: Date, at monthPosition: FSCalendarMonthPosition) {

@@ -116,8 +116,9 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
                        for document in snapshot.documents {
 
                            let data = document.data()
-                           let name = data["name"] as? String ?? ""
-                           let newUser = UserList(firstName: name)
+                           let firstName = data["firstName"] as? String ?? ""
+                           let lastName = data["lastName"] as? String ?? ""
+                           let newUser = UserList(firstName: firstName, lastName: lastName )
                            self.userArray.append(newUser)
                        }
                        self.tableView.reloadData()
@@ -281,7 +282,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
                                 self.performSegue(withIdentifier: "toQRScanner", sender: self)
                             }
                             else{
-                                db.collection("events").document(self.documentEvent).collection("users1").document(self.uuid).setData(["name" : "\(firstName) \(lastName)"])
+                                db.collection("events").document(self.documentEvent).collection("users1").document(self.uuid).setData(["firstName" : firstName, "lastName":lastName])
                                 self.getSignUpStatus(eventID: self.documentEvent)
                             }
                           }
@@ -319,13 +320,28 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
           let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
           
-          let event = userArray[indexPath.row]
+          let users = userArray[indexPath.row]
           
-          cell.textLabel?.text = "\(event.firstName)"
+        cell.textLabel?.text = "\(users.firstName) \(users.lastName)"
 
           return cell
           
       }
+    //Allows teacher to click on student and view information
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+      
+        //When clicked on the user is sent to the UserDetailsView
+        let userDetailsController = self.storyboard?.instantiateViewController(identifier: "UserDetailsViewController") as! UserDetailsViewController
+        //Sends the user name value of the cell clicked to the user details controller
+        userDetailsController.firstName = userArray[indexPath.row].firstName
+        userDetailsController.lastName = userArray[indexPath.row].lastName
+       
+        
+        //Instantiates the view using an animation
+        self.navigationController?.pushViewController(userDetailsController, animated: true)
+        
+    }
     //Allows teachers to delete students who have signed up
      func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
             let delete = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in

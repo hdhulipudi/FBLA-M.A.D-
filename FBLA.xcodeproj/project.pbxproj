@@ -58,6 +58,7 @@
 		E3C717A123F20B0600BAFD2F /* FBLA-Color-web.png in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */; };
 		E3C717A323F20CBA00BAFD2F /* lhs_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A223F20CB900BAFD2F /* lhs_logo.gif */; };
 		E3C717A523F242CA00BAFD2F /* Messages Image(2925471728).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3C717A423F242CA00BAFD2F /* Messages Image(2925471728).jpeg */; };
+		E3FBBBB523F2F1A7009BFEA1 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FBBBB423F2F1A7009BFEA1 /* UserDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		E3C717A023F20B0600BAFD2F /* FBLA-Color-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FBLA-Color-web.png"; sourceTree = "<group>"; };
 		E3C717A223F20CB900BAFD2F /* lhs_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = lhs_logo.gif; sourceTree = "<group>"; };
 		E3C717A423F242CA00BAFD2F /* Messages Image(2925471728).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Messages Image(2925471728).jpeg"; sourceTree = "<group>"; };
+		E3FBBBB423F2F1A7009BFEA1 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		E8AD6C30AEB97E796BB8B3A1 /* Pods-FBLA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLA.debug.xcconfig"; path = "Target Support Files/Pods-FBLA/Pods-FBLA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +211,7 @@
 				E328D96923E75EDE00FB9C05 /* LaunchScreenViewController.swift */,
 				E398CB8F23EA74B8000DF020 /* ContactUsViewController.swift */,
 				E35BA8AE23ECCEE000216657 /* ProfileViewController.swift */,
+				E3FBBBB423F2F1A7009BFEA1 /* UserDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				E35B881323B1224900A393EF /* SignUpViewController.swift in Sources */,
 				E35BA8AF23ECCEE000216657 /* ProfileViewController.swift in Sources */,
 				E35B882D23B17CCD00A393EF /* CalendarViewController.swift in Sources */,
+				E3FBBBB523F2F1A7009BFEA1 /* UserDetailsViewController.swift in Sources */,
 				E356576C23C00FF80036400D /* EventCell.swift in Sources */,
 				E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */,
 				E35B880123B1220900A393EF /* SceneDelegate.swift in Sources */,
