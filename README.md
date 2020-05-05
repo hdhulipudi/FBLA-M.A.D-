@@ -1,81 +1,82 @@
-LAMBERT FBLA MOBILE APP DEVELOPMENT 	VERSION:1.0    	
+Lambert Fbla Mobile App Development 	Version:1.0    	
 **********************************************************************************************
-AUTHORS: HARSHSAI DHULIPUDI, NIKHIL MURARI, TEJAS GURURAJ
-VOICE: 678-779-7273
-EMAIL: LAMBERTFBLAAPP@GMAIL.COM
+Authors: Harshsai Dhulipudi, Nikhil Murari, Tejas Gururaj
+Voice: 678-779-7273
+Email: Lambertfblaapp@Gmail.Com
 **********************************************************************************************
-GENERAL USAGE NOTES
-- ALL USERS WILL HAVE DEFAULT SCREENS (HOME PAGE, EVENTS, CALENDER, FAQ AND CONTACT US)
-- TEACHERS WILL HAVE EXTRA FUNCTIONALITY
-	- TEACHERS CAN CREATE EDIT AND DELETE EVENTS
-	- TEACHERS CAN SHARE THE QR CODES
-	- TEACHERS CAN VIEW AND DELETE STUDENTS WHO SIGNED UP FOR THE EVENTS
-- STUDENTS ARE ABLE TO SIGN UP FOR EVENTS THAT THE TEACHERS HAVE CREATED 
-- STUDENTS CAN SIGN-IN FOR CHAPTER MEETINGS 
-- STUDENTS CAN LEARN MORE ABOUT LAMBERT FBLA AS WELL AS FBLA IN GENERAL IN THE CONTACT US AND FAQ TABS
-- STUDENTS ARE ABLE TO VIEW THE CALENDAR AND SEE WHICH EVENTS ARE PARTAKING ON SPECIFIC DAYS
+General Usage Notes
+- All Users Will Have Default Screens (Home Page, Events, Calender, Faq And Contact Us)
+- Teachers Will Have Extra Functionality
+	- Teachers Can Create Edit And Delete Events
+	- Teachers Can Share The Qr Codes
+	- Teachers Can View And Delete Students Who Signed Up For The Events
+- Students Are Able To Sign Up For Events That The Teachers Have Created 
+- Students Can Sign-in For Chapter Meetings 
+- Students Can Learn More About Lambert Fbla As Well As Fbla In General In The Contact Us And Faq Tabs
+- Students Are Able To View The Calendar And See Which Events Are Partaking On Specific Days
 **********************************************************************************************
-INSTALLATION  & RUNTIME REQUIREMENTS
-- IN ORDER FOR THE APP TO FULLY FUNCTION ON AN IOS DEVICE, THE FOLLOWING REQUIREMENTS MUST BE MET:
-	INSTALLATION REQUIREMENTS:
-- APPLE MACBOOK OR IMAC RUNNING MACOS CATALINA OR HIGHER
-- XCODE 11 OR HIGHER
-- SWIFT 5 OR HIGHER
-	- IOS 12  OR HIGHER
-	- INTERNET ACCESS
-- TO RUN THE APP ON XCODE THE FOLLOWING MUST BE MET
-REQUIREMENTS:
-	- XCODE 11.3.1
+Installation  & Runtime Requirements
+- In Order For The App To Fully Function On An Ios Device, The Following Requirements Must Be Met:
+	Installation Requirements:
+- Apple Macbook Or Imac Running Macos Catalina Or Higher
+- Xcode 11 Or Higher
+- Swift 5 Or Higher
+	- Ios 12  Or Higher
+	- Internet Access
+- To Run The App On Xcode The Following Must Be Met
+Requirements:
+	- Xcode 11.3.1
 **********************************************************************************************
-INSTALLATION INSTRUCTIONS
+Installation Instructions
 
-- ON GITHUB CLICK THE CLONE/DOWNLOAD BUTTON AND SELECT OPEN IN XCODE
-- OR SIMPLY DOWNLOAD THE WHOLE PROJECT ON A MAC USING THE CLONE OR DOWNLOAD BUTTON
-- THEN OPEN THE .WORKSPACE FILE
-- CHANGE THE BUILD IDENTIFIER TO INSERTNAME.FBLA
-- CHANGE THE DEVELOPMENT TEAM TO A PERSONAL ACCOUNT
-- THEN SELECT IPHONE 11 AS THE DEVICE IN XCODE
-- CLICK RUN AND WAIT FOR THE APP TO LOAD
+- On Github Click The Clone/Download Button And Select Open In Xcode
+- Or Simply Download The Whole Project On A Mac Using The Clone Or Download Button
+- Then Open The .Workspace File
+- Change The Build Identifier To Insertname.Fbla
+- Change The Development Team To A Personal Account
+- Then Select Iphone 11 As The Device In Xcode
+- Click Run And Wait For The App To Load
 **********************************************************************************************
-CODE VIEWING INSTRUCTIONS
-- DOWNLOAD THE GITHUB REPOSITORY
-- AND OPEN THE THE PACKAGE USING XCODE
-**********************************************************************************************
-
-MOBILE APPLICATION LOGIN INSTRUCTIONS
-- THE AUTHORS OF THIS APPLICATION HAVE CREATED THE FOLLOWING TEACHER USER ACCOUNT FOR JUDGING PURPOSES:
-- STUDENT ACCOUNT EMAIL:"student@gmail.com" PASSWORD: "student123"
-- TEACHER ACCOUNT EMAIL:"teacher@gmail.com" PASSWORD: "teacher123"
-- FEEL FREE TO CREATE MORE ACCOUNTS TO TEST FEATURES SUCH AS SIGNING UP TO BE AN FBLA MEMBER AND CREATING EVENTS
-- BE SURE TO SPECIFY USING THE SWITCH IF THE ACCOUNT IS MEANT TO BE A TEACHER ACCOUNT OR NOT (TEACHERS HAVE SPECIAL FEATURES)
-
-
-**********************************************************************************************
-LICENSE
-
-THIS PROJECT IS LICENSED UNDER THE GNU GENERAL PUBLIC LICENSE V3.0 
+Code Viewing Instructions
+- Download The Github Repository
+- And Open The The Package Using Xcode
 **********************************************************************************************
 
-COPYRIGHT
+Mobile Application Login Instructions
+- The Authors Of This Application Have Created The Following Teacher User Account For Judging Purposes:
+- Student Account Email:"Student@Gmail.Com" Password: "Student123"
+- Teacher Account Email:"Teacher@Gmail.Com" Password: "Teacher123"
+- Feel Free To Create More Accounts To Test Features Such As Signing Up To Be An Fbla Member And Creating Events
+- Be Sure To Specify Using The Switch If The Account Is Meant To Be A Teacher Account Or Not (Teachers Have Special Features)
 
-APPLE ICON IS A REGISTERED TRADEMARK OF APPLE INC.
-TWITTER LOGO IS A REGISTERED TRADEMARK OF TWITTER INC.
-INSTAGRAM LOGO IS A REGISTERED TRADEMARK OF FACEBOOK INC.
-“LAMBERT X FBLA LONGHORN” LOGO
-**********************************************************************************************
-SOURCES
 
-DUE TO PRIOR SWIFT EXPERIENCE NOT MUCH HELP WAS NEED WHEN CREATING THE APP. HOWEVER, STACK OVERFLOW ALONG WITH SWIFT AND FIREBASE DOCUMENTATION WAS REFERENCED TO ON AN AS PER NEED BASIS
 **********************************************************************************************
-OPENSOURCE FRAMEWORKS
+License
 
-	-FSCALENDAR (HTTPS://GITHUB.COM/WENCHAOD/FSCALENDAR)
-	-ICONS 8 (HTTPS://ICONS8.COM/)
+This Project Is Licensed Under The Gnu General Public License V3.0 
 **********************************************************************************************
-BUILT WITH
 
-- XCODE INTEGRATED DEVELOPMENT ENVIRONMENT
-- SWIFT CODE FOR UI AND IMPLEMENTATION
-- ADOBE PHOTOSHOP CC/ADOBE ILLUSTRATOR FOR APP GRAPHICS
-- COCOAPODS FOR FIREBASE AND FSCALENDER
+Copyright
+
+Apple Icon Is A Registered Trademark Of Apple Inc.
+Twitter Logo Is A Registered Trademark Of Twitter Inc.
+Instagram Logo Is A Registered Trademark Of Facebook Inc.
+“Lambert X Fbla Longhorn” Logo
 **********************************************************************************************
+Sources
+
+Due To Prior Swift Experience Not Much Help Was Need When Creating The App. However, Stack Overflow Along With Swift And Firebase Documentation Was Referenced To On An As Per Need Basis
+**********************************************************************************************
+Opensource Frameworks
+
+	-fscalendar (Https://Github.Com/Wenchaod/Fscalendar)
+	-icons 8 (Https://Icons8.Com/)
+**********************************************************************************************
+Built With
+
+- Xcode Integrated Development Environment
+- Swift Code For Ui And Implementation
+- Adobe Photoshop Cc/Adobe Illustrator For App Graphics
+- Cocoapods For Firebase And Fscalender
+**********************************************************************************************
+
