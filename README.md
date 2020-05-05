@@ -1,11 +1,11 @@
-# Lambert Fbla Mobile App Development 	Version:1.0    	
-**********************************************************************************************
+# Lambert FBLA Mobile App Development 	   	
+
 Authors: Harshsai Dhulipudi, Nikhil Murari, Tejas Gururaj
 Voice: 678-779-7273
 Email: Lambertfblaapp@Gmail.Com
-**********************************************************************************************
+
 # General Usage Notes
-- All Users Will Have Default Screens (Home Page, Events, Calender, Faq And Contact Us)
+- All Users Will Have Default Screens (Home Page, Events, Calender, FAQ And Contact Us)
 - Teachers Will Have Extra Functionality
 	- Teachers Can Create Edit And Delete Events
 	- Teachers Can Share The Qr Codes
@@ -14,7 +14,7 @@ Email: Lambertfblaapp@Gmail.Com
 - Students Can Sign-in For Chapter Meetings 
 - Students Can Learn More About Lambert Fbla As Well As Fbla In General In The Contact Us And Faq Tabs
 - Students Are Able To View The Calendar And See Which Events Are Partaking On Specific Days
-**********************************************************************************************
+
 # Installation  & Runtime Requirements
 - In Order For The App To Fully Function On An Ios Device, The Following Requirements Must Be Met:
 	Installation Requirements:
@@ -24,7 +24,7 @@ Email: Lambertfblaapp@Gmail.Com
 	- Ios 12  Or Higher
 	- Internet Access
 
-**********************************************************************************************
+
 # Installation Instructions
 
 - On Github Click The Clone/Download Button And Select Open In Xcode
@@ -34,11 +34,11 @@ Email: Lambertfblaapp@Gmail.Com
 - Change The Development Team To A Personal Account
 - Then Select Iphone 11 As The Device In Xcode
 - Click Run And Wait For The App To Load
-**********************************************************************************************
+
 # Code Viewing Instructions
 - Download The Github Repository
 - And Open The The Package Using Xcode
-**********************************************************************************************
+
 
 # Mobile Application Login Instructions
 - The Authors Of This Application Have Created The Following Teacher User Account For Judging Purposes:
@@ -48,11 +48,10 @@ Email: Lambertfblaapp@Gmail.Com
 - Be Sure To Specify Using The Switch If The Account Is Meant To Be A Teacher Account Or Not (Teachers Have Special Features)
 
 
-**********************************************************************************************
-License
+# License
 
 This Project Is Licensed Under The Gnu General Public License V3.0 
-**********************************************************************************************
+
 
 # Copyright
 
@@ -60,21 +59,20 @@ Apple Icon Is A Registered Trademark Of Apple Inc.
 Twitter Logo Is A Registered Trademark Of Twitter Inc.
 Instagram Logo Is A Registered Trademark Of Facebook Inc.
 “Lambert X Fbla Longhorn” Logo
-**********************************************************************************************
+
 # Sources
 
 Due To Prior Swift Experience Not Much Help Was Need When Creating The App. However, Stack Overflow Along With Swift And Firebase Documentation Was Referenced To On An As Per Need Basis
-**********************************************************************************************
+
 # Opensource Frameworks
 
-	-fscalendar (Https://Github.Com/Wenchaod/Fscalendar)
-	-icons 8 (Https://Icons8.Com/)
-**********************************************************************************************
+-fscalendar (Https://Github.Com/Wenchaod/Fscalendar)
+-icons 8 (Https://Icons8.Com/)
+
 # Built With
 
 - Xcode Integrated Development Environment
 - Swift Code For Ui And Implementation
 - Adobe Photoshop Cc/Adobe Illustrator For App Graphics
 - Cocoapods For Firebase And Fscalender
-**********************************************************************************************
 
