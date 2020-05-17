@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18C15A29131F0480EA6434BD /* Pods_FBLA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE6343EC1B3A943C565E466 /* Pods_FBLA.framework */; };
+		E322DF3E2470A661003021B9 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E322DF3D2470A661003021B9 /* SettingTableViewController.swift */; };
+		E322DF402470B70A003021B9 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E322DF3F2470B70A003021B9 /* FAQView.swift */; };
 		E328D96823E75B2400FB9C05 /* FBLA Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */; };
 		E328D96A23E75EDE00FB9C05 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E328D96923E75EDE00FB9C05 /* LaunchScreenViewController.swift */; };
 		E32AC5BB23F0DE7900159026 /* Esha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E32AC5AE23F0DE7900159026 /* Esha.jpg */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		6CE6343EC1B3A943C565E466 /* Pods_FBLA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBLA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DF74EDA5D338690CC03CD8 /* Pods-FBLA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBLA.release.xcconfig"; path = "Target Support Files/Pods-FBLA/Pods-FBLA.release.xcconfig"; sourceTree = "<group>"; };
+		E322DF3D2470A661003021B9 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		E322DF3F2470B70A003021B9 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		E328D96723E75B2400FB9C05 /* FBLA Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "FBLA Logo.jpg"; sourceTree = "<group>"; };
 		E328D96923E75EDE00FB9C05 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		E32AC5AE23F0DE7900159026 /* Esha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Esha.jpg; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				E35B882623B168DE00A393EF /* TabBarController.swift */,
 				E35B883023B197C200A393EF /* EventModel.swift */,
 				E356576B23C00FF80036400D /* EventCell.swift */,
+				E322DF3F2470B70A003021B9 /* FAQView.swift */,
 			);
 			path = FBLA;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				E398CB8F23EA74B8000DF020 /* ContactUsViewController.swift */,
 				E35BA8AE23ECCEE000216657 /* ProfileViewController.swift */,
 				E3FBBBB423F2F1A7009BFEA1 /* UserDetailsViewController.swift */,
+				E322DF3D2470A661003021B9 /* SettingTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -406,7 +412,9 @@
 				E35B880323B1220900A393EF /* ViewController.swift in Sources */,
 				E35B882723B168DE00A393EF /* TabBarController.swift in Sources */,
 				E35B87FF23B1220900A393EF /* AppDelegate.swift in Sources */,
+				E322DF402470B70A003021B9 /* FAQView.swift in Sources */,
 				E35B882523B1670A00A393EF /* EventViewController.swift in Sources */,
+				E322DF3E2470A661003021B9 /* SettingTableViewController.swift in Sources */,
 				E328D96A23E75EDE00FB9C05 /* LaunchScreenViewController.swift in Sources */,
 				E35B881323B1224900A393EF /* SignUpViewController.swift in Sources */,
 				E35BA8AF23ECCEE000216657 /* ProfileViewController.swift in Sources */,

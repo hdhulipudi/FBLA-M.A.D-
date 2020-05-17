@@ -11,7 +11,6 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var userButton: UIButton!
     
     
     
@@ -30,12 +29,6 @@ class HomeViewController: UIViewController {
     
     //When button is tapped using the storyboard segues the user will be sent to the user viewcontroller
 
-    @IBAction func userButtonTapped(_ sender: Any) {
-        
-        
-       
-    }
-  
-   
+
 
 }

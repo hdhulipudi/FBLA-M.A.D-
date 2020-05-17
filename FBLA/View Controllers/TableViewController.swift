@@ -26,11 +26,18 @@ class TableViewController: UITableViewController {
     
     @IBOutlet var addEvent: UIBarButtonItem!
     
+    @IBOutlet var settingsButton: UIBarButtonItem!
     
-
-
+    /*@IBAction func settingsClicked(_ sender: Any) {
+        let settingsViewController = self.storyboard?.instantiateViewController(identifier: "SettingsViewController") as! SettingsViewController
+         self.navigationController?.pushViewController(settingsViewController, animated: true)
+    }
+    */
     override func viewDidLoad() {
-        self.navigationItem.rightBarButtonItem?.tintColor = .clear
+        self.addEvent.isEnabled = false
+        self.addEvent.tintColor = .clear
+        settingsButton.isEnabled = true
+        self.settingsButton.tintColor =  #colorLiteral(red: 0.6180580258, green: 0.1074862555, blue: 0.1912124157, alpha: 1)
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         
@@ -134,12 +141,15 @@ class TableViewController: UITableViewController {
                 //If the user is a teacher certain elements are hidden and certain elements are displayed
                  if !hideStatus{
                     
-                    self.navigationItem.rightBarButtonItem  = nil
+                    self.addEvent.isEnabled  = false
+                    self.addEvent.tintColor = .clear
                     self.teacherStatus = hideStatus
                     
                  }
                  else{
-                    self.navigationItem.rightBarButtonItem?.tintColor = .black
+                    self.addEvent.isEnabled  = true
+                    self.addEvent.tintColor =  #colorLiteral(red: 0.6180580258, green: 0.1074862555, blue: 0.1912124157, alpha: 1)
+                    
                     self.teacherStatus = hideStatus
 
                     }
