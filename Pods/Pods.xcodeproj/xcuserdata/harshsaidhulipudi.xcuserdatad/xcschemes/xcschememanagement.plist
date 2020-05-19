@@ -123,12 +123,33 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
-		<key>Pods-FBLA.xcscheme</key>
+		<key>InputBarAccessoryView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>MessageKit-MessageKitAssets.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>MessageKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>23</integer>
+		</dict>
+		<key>Pods-FBLA.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>26</integer>
 		</dict>
 		<key>abseil.xcscheme</key>
 		<dict>
@@ -163,14 +184,14 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>22</integer>
 		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>25</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -1167,7 +1167,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NoX-Xs-Jbp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Competition" image="book.fill" catalog="system" id="BAa-oP-bDs"/>
+                    <tabBarItem key="tabBarItem" title="Competition" image="icons8-medal-50.png" id="BAa-oP-bDs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcB-Ws-TW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1591,7 +1591,7 @@ FBLA is an important partner in the success of school-to-work programs, business
         <!--Announcements-->
         <scene sceneID="xxc-9A-vcU">
             <objects>
-                <viewController id="eG5-8e-4hw" sceneMemberID="viewController">
+                <viewController id="eG5-8e-4hw" customClass="ChatViewController" customModule="FBLA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iKe-dn-th3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1602,7 +1602,7 @@ FBLA is an important partner in the success of school-to-work programs, business
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N6d-fp-bhX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-865" y="355"/>
+            <point key="canvasLocation" x="-865.21739130434787" y="354.91071428571428"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Jfp-Vu-kC2">
@@ -1722,11 +1722,11 @@ FBLA is an important partner in the success of school-to-work programs, business
         <image name="Sidd.jpg" width="730" height="730"/>
         <image name="Varshini.jpg" width="730" height="730"/>
         <image name="Varun.jpg" width="730" height="729"/>
-        <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="icons8-instagram-50.png" width="50" height="50"/>
+        <image name="icons8-medal-50.png" width="22" height="22"/>
         <image name="icons8-phone-50.png" width="50" height="50"/>
         <image name="icons8-twitter-50.png" width="50" height="50"/>
         <image name="lhs_logo.gif" width="161" height="161"/>
