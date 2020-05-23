@@ -12,6 +12,8 @@ class SettingTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       // navigationItem.largeTitleDisplayMode = .never
+
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -23,6 +25,12 @@ class SettingTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            if #available(iOS 11.0, *) {
+                navigationItem.largeTitleDisplayMode = .never
+            }
+        }
     
   
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

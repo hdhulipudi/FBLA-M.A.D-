@@ -53,6 +53,7 @@
 		E35BA8B123ECDD9B00216657 /* icons8-phone-100.png in Resources */ = {isa = PBXBuildFile; fileRef = E35BA8B023ECDD9B00216657 /* icons8-phone-100.png */; };
 		E35BA8B323ECDDA500216657 /* icons8-twitter-100.png in Resources */ = {isa = PBXBuildFile; fileRef = E35BA8B223ECDDA500216657 /* icons8-twitter-100.png */; };
 		E35BA8B523ECDDAB00216657 /* icons8-instagram-100.png in Resources */ = {isa = PBXBuildFile; fileRef = E35BA8B423ECDDAB00216657 /* icons8-instagram-100.png */; };
+		E36A716E2479AE5C00CD6293 /* ChatListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A716D2479AE5C00CD6293 /* ChatListTableViewController.swift */; };
 		E3749FB923EDED5700AC69F3 /* icons8-ok-96.png in Resources */ = {isa = PBXBuildFile; fileRef = E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */; };
 		E37F511823C9086C00D1C5A9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37F511723C9086C00D1C5A9 /* QuestionsViewController.swift */; };
 		E39196BE23C96A7C00256F43 /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E39196BD23C96A7C00256F43 /* photo.jpeg */; };
@@ -118,6 +119,7 @@
 		E35BA8B023ECDD9B00216657 /* icons8-phone-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-phone-100.png"; sourceTree = "<group>"; };
 		E35BA8B223ECDDA500216657 /* icons8-twitter-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter-100.png"; sourceTree = "<group>"; };
 		E35BA8B423ECDDAB00216657 /* icons8-instagram-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-instagram-100.png"; sourceTree = "<group>"; };
+		E36A716D2479AE5C00CD6293 /* ChatListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewController.swift; sourceTree = "<group>"; };
 		E3749FB823EDED5600AC69F3 /* icons8-ok-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-ok-96.png"; sourceTree = "<group>"; };
 		E37F511723C9086C00D1C5A9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		E39196BD23C96A7C00256F43 /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				E3FBBBB423F2F1A7009BFEA1 /* UserDetailsViewController.swift */,
 				E322DF3D2470A661003021B9 /* SettingTableViewController.swift */,
 				E3486C72247453BE006E4A85 /* ChatViewController.swift */,
+				E36A716D2479AE5C00CD6293 /* ChatListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				E3486C73247453BE006E4A85 /* ChatViewController.swift in Sources */,
 				E3FBBBB523F2F1A7009BFEA1 /* UserDetailsViewController.swift in Sources */,
 				E356576C23C00FF80036400D /* EventCell.swift in Sources */,
+				E36A716E2479AE5C00CD6293 /* ChatListTableViewController.swift in Sources */,
 				E3486C79247456C7006E4A85 /* Chat.swift in Sources */,
 				E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */,
 				E35B880123B1220900A393EF /* SceneDelegate.swift in Sources */,

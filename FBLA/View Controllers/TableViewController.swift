@@ -38,7 +38,7 @@ class TableViewController: UITableViewController {
         self.addEvent.tintColor = .clear
         settingsButton.isEnabled = true
         self.settingsButton.tintColor =  #colorLiteral(red: 0.6180580258, green: 0.1074862555, blue: 0.1912124157, alpha: 1)
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
         
         
         db = Firestore.firestore()
@@ -60,6 +60,13 @@ class TableViewController: UITableViewController {
         self.hideKeyboardWhenTappedAround()
 
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if #available(iOS 11.0, *) {
+            navigationItem.largeTitleDisplayMode = .always
+                navigationController?.navigationBar.prefersLargeTitles = true
+            }
+        }
     
     
     

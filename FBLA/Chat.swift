@@ -11,14 +11,17 @@ import UIKit
 
 struct Chat {
 var users: [String]
+var isAnnouncement: Bool
 var dictionary: [String: Any] {
-return ["users": users]
+    return ["users": users, "isAnnouncement":isAnnouncement]
    }
 }
 
 extension Chat {
 init?(dictionary: [String:Any]) {
-guard let chatUsers = dictionary["users"] as? [String] else {return nil}
-self.init(users: chatUsers)
+guard let chatUsers = dictionary["users"] as? [String],
+      let announcementStatus = dictionary["isAnnouncement"] as? Bool
+      else {return nil}
+    self.init(users: chatUsers, isAnnouncement: announcementStatus)
 }
 }

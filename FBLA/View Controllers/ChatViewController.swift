@@ -21,7 +21,7 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
     
     var user2Name: String? = "Student"
     var user2ImgUrl: String? = ""
-    var user2UID: String? = "8jZMJRd6rtZ5qbMSn2BosjXIpps2"
+    var user2UID: String? = ""
     var status:Bool?
     private var docReference: DocumentReference?
     let db = Firestore.firestore()
@@ -90,10 +90,12 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
                            let lastName:String = document.get("lastName") as! String
                            
                             name = firstName + " " + lastName
+                           print(name)
                        }
                         
                    }
                }
+               print(name)
                return name
            
            }
@@ -160,6 +162,36 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
              }
          }*/
     }
+    func disableInput(){
+        db.collection("users").document(Auth.auth().currentUser!.uid).getDocument() { (document, error) in
+
+            if let error = error {
+
+                print(error.localizedDescription)
+
+            } else {
+
+              if let document = document, document.exists {
+              let tempTeacherStatus = document.get("teacherStatus") as! Bool
+              let hideStatus = tempTeacherStatus
+             //If the user is a teacher certain elements are hidden and certain elements are displayed
+              if !hideStatus{
+                 
+                self.messageInputBar.isHidden = true
+                
+              }
+              else{
+                
+                self.messageInputBar.isHidden = false
+         
+
+                 }
+             
+              
+                }
+            }
+        }
+    }
     
     func loadChat() {
         
@@ -192,7 +224,33 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
                            
                            let chat = Chat(dictionary: doc.data())
                            //Get the chat which has user2 id
-                           if (chat?.users.contains(self.user2UID!))! {
+                        if(chat?.isAnnouncement == true && self.user2UID == "Announcements"){
+                            self.disableInput()
+                            self.docReference = doc.reference
+                            //fetch it's thread collection
+                             doc.reference.collection("thread")
+                                .order(by: "created", descending: false)
+                                .addSnapshotListener(includeMetadataChanges: true, listener: { (threadQuery, error) in
+                            if let error = error {
+                                print("Error: \(error)")
+                                return
+                            } else {
+                                self.messages.removeAll()
+                                    for message in threadQuery!.documents {
+
+                                        let msg = Message(dictionary: message.data())
+                                        self.messages.append(msg!)
+                                        print("Data: \(msg?.content ?? "No message found")")
+                                    }
+                                self.messagesCollectionView.reloadData()
+                                self.messagesCollectionView.scrollToBottom(animated: true)
+                            }
+                            })
+                            return
+                        }
+                        else{
+                        
+                            if ((chat?.users.contains(self.user2UID!))! && chat?.users.count == 2) {
                                
                                self.docReference = doc.reference
                                //fetch it's thread collection
@@ -215,7 +273,8 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
                                }
                                })
                                return
-                           } //end of if
+                           }
+                        }//end of if
                        } //end of for
                        self.createNewChat()
                    } else {
@@ -256,10 +315,40 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
             
         })
     }
-    
-    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
 
-        let message = Message(id: UUID().uuidString, content: text, created: Timestamp(), senderID: currentUser.uid, senderName: getDisplayName(uuid: currentUser.uid))
+    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
+        //print(getDisplayName(uuid: currentUser.uid))
+        db.collection("users").document(currentUser.uid).getDocument { (document, error) in
+            if let error = error
+            {
+                print(error)
+            }
+            else {
+                //Gets user information from the firebase database and sets the UI elements to the data
+                if let document = document, document.exists{
+                 
+                    let firstName:String = document.get("firstName") as! String
+                    let lastName:String = document.get("lastName") as! String
+                    
+                    // name = firstName + " " + lastName
+                   // print(name)
+                    let message = Message(id: UUID().uuidString, content: text, created: Timestamp(), senderID: self.currentUser.uid, senderName:  firstName + " " + lastName)
+                           print(message)
+                                   
+                                     //messages.append(message)
+                    self.insertNewMessage(message)
+                    self.save(message)
+                       
+                                     inputBar.inputTextView.text = ""
+                    self.messagesCollectionView.reloadData()
+                    self.messagesCollectionView.scrollToBottom(animated: true)
+                    
+                }
+                 
+            }
+        }
+        /*let message = Message(id: UUID().uuidString, content: text, created: Timestamp(), senderID: currentUser.uid, senderName: getDisplayName(uuid: currentUser.uid))
+        print(message)
                 
                   //messages.append(message)
                   insertNewMessage(message)
@@ -267,7 +356,7 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
     
                   inputBar.inputTextView.text = ""
                   messagesCollectionView.reloadData()
-                  messagesCollectionView.scrollToBottom(animated: true)
+                  messagesCollectionView.scrollToBottom(animated: true)*/
     }
     func currentSender() -> SenderType {
         return Sender(id: Auth.auth().currentUser!.uid, displayName: Auth.auth().currentUser?.displayName ?? "Name not found")
@@ -295,7 +384,7 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
     
     // MARK: - MessagesDisplayDelegate
     func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
-        return isFromCurrentSender(message: message) ? .blue: .lightGray
+        return isFromCurrentSender(message: message) ? UIColor(red: 0.10, green: 0.51, blue: 0.99, alpha: 1.00): UIColor(red: 0.89, green: 0.90, blue: 0.91, alpha: 1.00)
     }
 
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
