@@ -19,7 +19,7 @@ class ChatViewController: MessagesViewController, InputBarAccessoryViewDelegate,
     
     var currentUser: User = Auth.auth().currentUser!
     
-    var user2Name: String? = "Student"
+    var user2Name: String? = ""
     var user2ImgUrl: String? = ""
     var user2UID: String? = ""
     var status:Bool?

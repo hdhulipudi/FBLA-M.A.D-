@@ -26,11 +26,15 @@ class ViewController: UIViewController {
       
       
         setUpElements()
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
         navigationController?.navigationBar.isTranslucent = true
 
         self.hideKeyboardWhenTappedAround()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+
     }
     // MARK: - Set up Elements
     // UI changes

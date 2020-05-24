@@ -32,6 +32,12 @@ class SignUpViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
         setUpElements()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isTranslucent = true
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
+
+    }
     func setUpElements(){
         //Hides Error Label
         errorLabel.alpha = 0

@@ -33,21 +33,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-gl-w75">
-                                <rect key="frame" x="40" y="229" width="334" height="88"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-SI-7wK">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-yA-hLt">
-                                        <rect key="frame" x="0.0" y="54" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="wwz-XD-Yrm">
                                 <rect key="frame" x="40" y="424" width="334" height="116"/>
                                 <subviews>
@@ -79,12 +64,6 @@
                                     <constraint firstItem="fXH-KY-AON" firstAttribute="height" secondItem="Dnq-NO-PBS" secondAttribute="height" multiplier="0.75" id="Y4M-Yg-MSN"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-9M-f1T">
-                                <rect key="frame" x="40" y="143" width="131" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0P-aN-nQP">
                                 <rect key="frame" x="40" y="570" width="334" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -101,12 +80,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="facebook-512.png"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-gl-w75">
+                                <rect key="frame" x="40" y="287" width="334" height="88"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-SI-7wK">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-yA-hLt">
+                                        <rect key="frame" x="0.0" y="54" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk6-9M-f1T">
+                                <rect key="frame" x="40" y="201" width="131" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="hk6-9M-f1T" firstAttribute="leading" secondItem="eXX-gl-w75" secondAttribute="leading" id="27J-sy-xMv"/>
                             <constraint firstItem="eXX-gl-w75" firstAttribute="trailing" secondItem="wwz-XD-Yrm" secondAttribute="trailing" id="GO0-u1-wSD"/>
-                            <constraint firstItem="hk6-9M-f1T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="RpX-2u-gk2"/>
+                            <constraint firstItem="hk6-9M-f1T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="RpX-2u-gk2"/>
                             <constraint firstItem="m0P-aN-nQP" firstAttribute="top" secondItem="wwz-XD-Yrm" secondAttribute="bottom" constant="30" id="ScR-df-uhR"/>
                             <constraint firstItem="eXX-gl-w75" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TbD-yd-fxp"/>
                             <constraint firstItem="eXX-gl-w75" firstAttribute="top" secondItem="hk6-9M-f1T" secondAttribute="bottom" constant="38" id="WeO-0z-f4J"/>

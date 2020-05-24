@@ -145,6 +145,7 @@ class ChatListTableViewController: UITableViewController {
         let chatViewController = self.storyboard?.instantiateViewController(identifier: "ChatViewController") as! ChatViewController
         //Sends the user name value of the cell clicked to the user details controller
         chatViewController.user2UID = chatNames[indexPath.row].userIDs
+        chatViewController.user2Name = chatNames[indexPath.row].users
         
        
         
