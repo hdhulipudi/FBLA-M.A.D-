@@ -10,12 +10,16 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 import FirebaseAuth
+import MapKit
+import CoreLocation
 
 class EventViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var userLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
    
+    @IBOutlet weak var addressButton: UIButton!
+    
     
     @IBOutlet weak var enterButton: UIButton!
 
@@ -36,6 +40,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     let uuid = Auth.auth().currentUser!.uid
     let db = Firestore.firestore()
     var img:UIImage? = nil
+    var location:GeoPoint? = nil
 
     
     override func viewDidLoad() {
@@ -138,14 +143,19 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
             else{
                 if let document = document, document.exists{
                     //gets the date as a timeStamp
+                    let tempLocation = document.get("location") as! GeoPoint
                     let tempDate = document.get("timeStamp") as! Timestamp
+                    let tempAddress = document.get("address") as! String
                     //converts the timestamp to a date
                     let date = Date(timeIntervalSince1970: TimeInterval(tempDate.seconds))
                     //formats the date to a string
                     let formatter = DateFormatter()
                     formatter.dateFormat = "E, d MMM yyyy HH:mm"
                     //sets the Label to the formatted Date of the event
+                    
+                    self.location = tempLocation
                     self.timeLabel.text = formatter.string(from: date)
+                    self.addressButton.setTitle(tempAddress, for: .normal)
                     }
             }
         }
@@ -260,6 +270,13 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         }
     }
+    
+    
+   
+    @IBAction func addressButtonTapped(_ sender: Any) {
+        
+    }
+    
     // MARK: - Enter Button
     //allows the user to sign up for the event
     @IBAction func enterButtonTapped(_ sender: Any) {

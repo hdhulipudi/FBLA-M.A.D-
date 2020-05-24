@@ -90,12 +90,15 @@ class TableViewController: UITableViewController {
                            let name = data["name"] as? String ?? ""
                            let description = data["description"] as? String ?? ""
                            let date = data["timeStamp"] as! Timestamp
+                           let location = data["location"] as! GeoPoint
+                        let address = data["address"] as? String ?? ""
                            let timeStamp = Date(timeIntervalSince1970: TimeInterval(date.seconds))
+                        
                     
                         
                            //let timeStamp = data["timeStamp"] as? Date ?? NSDate.now
                            let chapterMeeting = data["chapterMeeting"] as? Bool ?? true
-                           let newEvent = Event(name:name, description: description, timeStamp: timeStamp, chapterMeeting: chapterMeeting)
+                           let newEvent = Event(name:name, description: description, timeStamp: timeStamp, chapterMeeting: chapterMeeting, location: location, address: address)
                            self.eventArray.append(newEvent)
                        }
                        self.tableView.reloadData()

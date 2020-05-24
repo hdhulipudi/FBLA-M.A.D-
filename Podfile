@@ -15,6 +15,8 @@ target 'FBLA' do
   pod 'Firebase/Storage'
   pod 'FSCalendar'
   pod 'MessageKit'
+  pod 'LocationPicker'
+
 
 
 

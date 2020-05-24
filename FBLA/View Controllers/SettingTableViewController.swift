@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 class SettingTableViewController: UITableViewController {
 
@@ -25,13 +27,7 @@ class SettingTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            if #available(iOS 11.0, *) {
-                navigationItem.largeTitleDisplayMode = .never
-            }
-        }
-    
+   
   
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(indexPath.row == 0){
@@ -53,6 +49,26 @@ class SettingTableViewController: UITableViewController {
                        self.navigationController?.pushViewController(userDetailsController, animated: true)
            
         }
+        if(indexPath.row == 4){
+                  let db = Firestore.firestore()
+                  let alert = UIAlertController(title: "Enter issue:", message: nil, preferredStyle: .alert)
+                  alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+                  alert.addTextField(configurationHandler: { issueField in
+                      issueField.placeholder = "Input your issue here..."
+                  })
+
+                  alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+
+                      if let issue = alert.textFields?.first?.text {
+                          db.collection("issues").document().setData(["issue":issue])
+                          
+                      }
+                  }))
+
+                  self.present(alert, animated: true)
+                  
+               }
         
     }
     /*

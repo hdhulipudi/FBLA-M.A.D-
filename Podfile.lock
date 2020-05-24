@@ -279,6 +279,7 @@ PODS:
     - InputBarAccessoryView/Core (= 4.3.2)
   - InputBarAccessoryView/Core (4.3.2)
   - leveldb-library (1.22)
+  - LocationPicker (1.4.2)
   - MessageKit (3.1.0):
     - InputBarAccessoryView (~> 4.3.0)
   - nanopb (0.3.9011):
@@ -294,6 +295,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - FSCalendar
+  - LocationPicker
   - MessageKit
 
 SPEC REPOS:
@@ -320,6 +322,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - InputBarAccessoryView
     - leveldb-library
+    - LocationPicker
     - MessageKit
     - nanopb
 
@@ -346,9 +349,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  LocationPicker: 9af49409ec3ca13fdf4bf6b39e1a3c7dec029f4a
   MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 8b801b3b13774e1ca47f7925bf9e92527974e170
+PODFILE CHECKSUM: f6234d629aaabdec3cc00b20ae5263e27b8c3a46
 
 COCOAPODS: 1.8.4

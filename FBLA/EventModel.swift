@@ -19,7 +19,8 @@ struct Event {
     var description:String
     var timeStamp:Date
     var chapterMeeting:Bool
-   
+    var location:GeoPoint
+    var address:String
    
     
     var dictionary:[String:Any] {
@@ -27,7 +28,9 @@ struct Event {
             "name":name,
             "description" : description,
             "timeStamp" : timeStamp,
-            "chapterMeeting" : chapterMeeting
+            "chapterMeeting" : chapterMeeting,
+            "location": location,
+            "address": address
         ]
     }
     
@@ -67,10 +70,14 @@ extension Event : DocumentSerializable {
         guard let name = dictionary["name"] as? String,
             let description = dictionary["description"] as? String,
             let timeStamp = dictionary ["timeStamp"] as? Date,
-            let chapterMeeting = dictionary["chapterMeeting"] as? Bool
+            let chapterMeeting = dictionary["chapterMeeting"] as? Bool,
+            let location = dictionary["location"] as?
+                GeoPoint,
+            let address = dictionary["address"] as? String
             else {return nil}
         
-        self.init(name: name, description: description, timeStamp: timeStamp, chapterMeeting: chapterMeeting)
+        self.init(name: name, description: description, timeStamp: timeStamp, chapterMeeting: chapterMeeting,
+                  location:location,address:address)
     }
 
 }
