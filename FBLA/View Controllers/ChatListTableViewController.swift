@@ -11,12 +11,14 @@ import Firebase
 import FirebaseAuth
 
 class ChatListTableViewController: UITableViewController {
-    var chatNames:[String] = []
+    var chatNames:[ChatList] = []
     let db = Firestore.firestore()
+    
     override func viewDidLoad() {
        
         super.viewDidLoad()
-      
+        addButton.isEnabled = false
+        addButton.tintColor = .clear
         //print("hi")
     
         //print(chatNames)
@@ -31,9 +33,35 @@ class ChatListTableViewController: UITableViewController {
                  navigationController?.navigationBar.prefersLargeTitles = true
              }
          }
+    
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    
     @IBAction func addButtonClicked(_ sender: Any) {
         createNewChat()
     }
+    @IBAction func addSingleButtonClicked(_ sender: Any) {
+        let alert = UIAlertController(title: "Enter email of user you want to message:", message: nil, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+                        alert.addTextField(configurationHandler: { issueField in
+                            issueField.placeholder = "Input email here..."
+                        })
+
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+
+                            if let issue = alert.textFields?.first?.text {
+                               
+                                self.createNewSingleChat(email: issue)
+                            }
+                        }))
+
+                        self.present(alert, animated: true)
+                        
+                     }
+
+        
+    
+    
     func loadData() {
         
         db.collection("Chats").whereField("users", arrayContains: Auth.auth().currentUser?.uid ?? "Not Found User 1").getDocuments() { (snapshot, error) in
@@ -49,15 +77,30 @@ class ChatListTableViewController: UITableViewController {
                        for document in snapshot.documents {
                            let data = Chat(dictionary: document.data())
                           
-                           print(data)
+                           //print(data)
                         
                            if(data!.users.count > 2){
-                            self.chatNames.append("Announcements")
+                            self.chatNames.append(ChatList(users: "Announcements", userIDs: "Announcements"))
                            }
                            else{
                             for user in data!.users{
                                 if(user != Auth.auth().currentUser?.uid){
-                                    self.chatNames.append(user)
+                                   self.db.collection("users").document(user).getDocument(){ (snapshot, err) in
+                                            if let err = err {
+                                                    print(err)
+                                                }
+                                            else{
+                                              if let snapshot = snapshot {
+                                                let firstName = snapshot.get("firstName") as? String
+                                                let lastName = snapshot.get("lastName") as? String
+                                                print(firstName!)
+                                                let name = firstName! + " " + lastName!
+                                               self.chatNames.append(ChatList(users: name, userIDs: user))
+                                                self.tableView.reloadData()
+                                                }
+                                            }
+                                    }
+                                  //
                                 }
                             }
                           }
@@ -90,7 +133,8 @@ class ChatListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        // var chatNames:[String] = []
         let cell = tableView.dequeueReusableCell(withIdentifier: "chatCell", for: indexPath)
-        cell.textLabel?.text = chatNames[indexPath.row]
+        print(chatNames)
+        cell.textLabel?.text = chatNames[indexPath.row].users
         
         return cell
     }
@@ -100,7 +144,7 @@ class ChatListTableViewController: UITableViewController {
         //When clicked on the user is sent to the UserDetailsView
         let chatViewController = self.storyboard?.instantiateViewController(identifier: "ChatViewController") as! ChatViewController
         //Sends the user name value of the cell clicked to the user details controller
-        chatViewController.user2UID = chatNames[indexPath.row]
+        chatViewController.user2UID = chatNames[indexPath.row].userIDs
         
        
         
@@ -141,9 +185,45 @@ class ChatListTableViewController: UITableViewController {
                     
                 }
             }
+    }
+            
             
         
-        
+    func createNewSingleChat(email:String) {
+                      // let users = [self.currentUser.uid, self.user2UID]
+                       var users:[String] = []
+                     db.collection("users").whereField("email", isEqualTo: email).getDocuments() { (snapshot, error) in
+                                  if let error = error {
+                                      print("Error getting documents: \(error)")
+                                  } else {
+                                     
+                                      for document in snapshot!.documents {
+                                          print(document.documentID)
+                                          users.append(document.documentID)
+                                      }
+                                       users.append(Auth.auth().currentUser!.uid)
+                                       let data: [String: Any] = [
+                                                   "users":users,
+                                           "isAnnouncement":false
+                                               ]
+                                               
+                                       let db = Firestore.firestore().collection("Chats")
+                                       print(data)
+                                       db.addDocument(data: data) { (error) in
+                                           if let error = error {
+                                           print("Unable to create chat! \(error)")
+                                           return
+                                           }
+                                           else {
+                                               //self.loadChat()
+                                               self.chatNames.removeAll()
+                                               self.loadData()
+                                               }
+                                       }
+                                   
+                               }
+                           }
+                 }
          /*let data: [String: Any] = [
              "users":users
          ]
@@ -158,7 +238,8 @@ class ChatListTableViewController: UITableViewController {
                  self.loadChat()
              }
          }*/
-    }
+    
+  
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

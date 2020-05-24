@@ -32,6 +32,7 @@
 		E3486C79247456C7006E4A85 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3486C78247456C7006E4A85 /* Chat.swift */; };
 		E3486C7D24747D1F006E4A85 /* icons8-medal-50.png in Resources */ = {isa = PBXBuildFile; fileRef = E3486C7C24747D1F006E4A85 /* icons8-medal-50.png */; };
 		E3486C7F24747E38006E4A85 /* icons8-medal-50-2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3486C7E24747E37006E4A85 /* icons8-medal-50-2.png */; };
+		E353B76E247B1FA900224183 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353B76D247B1FA900224183 /* ChatList.swift */; };
 		E356576C23C00FF80036400D /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E356576B23C00FF80036400D /* EventCell.swift */; };
 		E3578C0F23D22A7F009EEA10 /* 17004.png in Resources */ = {isa = PBXBuildFile; fileRef = E3578C0E23D22A7F009EEA10 /* 17004.png */; };
 		E35B87FF23B1220900A393EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B87FE23B1220900A393EF /* AppDelegate.swift */; };
@@ -100,6 +101,7 @@
 		E3486C78247456C7006E4A85 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		E3486C7C24747D1F006E4A85 /* icons8-medal-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-medal-50.png"; sourceTree = "<group>"; };
 		E3486C7E24747E37006E4A85 /* icons8-medal-50-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-medal-50-2.png"; sourceTree = "<group>"; };
+		E353B76D247B1FA900224183 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		E356576B23C00FF80036400D /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		E3578C0E23D22A7F009EEA10 /* 17004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17004.png; sourceTree = "<group>"; };
 		E35B87FB23B1220900A393EF /* FBLA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 				E322DF3F2470B70A003021B9 /* FAQView.swift */,
 				E3486C742474569C006E4A85 /* Message.swift */,
 				E3486C78247456C7006E4A85 /* Chat.swift */,
+				E353B76D247B1FA900224183 /* ChatList.swift */,
 			);
 			path = FBLA;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				E3BEA30223BFBCAA00B118BC /* QRScannerViewController.swift in Sources */,
 				E35B880123B1220900A393EF /* SceneDelegate.swift in Sources */,
 				E35B882F23B1934C00A393EF /* TableViewController.swift in Sources */,
+				E353B76E247B1FA900224183 /* ChatList.swift in Sources */,
 				E32B398723B58343003B7C03 /* EventSignUpViewController.swift in Sources */,
 				E3486C752474569C006E4A85 /* Message.swift in Sources */,
 				E37F511823C9086C00D1C5A9 /* QuestionsViewController.swift in Sources */,

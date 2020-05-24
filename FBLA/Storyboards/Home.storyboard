@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-Gv-Bwi">
-                                <rect key="frame" x="115" y="203" width="185" height="30"/>
+                                <rect key="frame" x="115" y="177" width="185" height="30"/>
                                 <color key="backgroundColor" red="0.61809086800000002" green="0.1051465645" blue="0.19214779139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Competitive Events">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,7 +129,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="WWQ-hD-RCn">
-                                <rect key="frame" x="48" y="273" width="318" height="50"/>
+                                <rect key="frame" x="48" y="247" width="318" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqz-ch-Qdl">
                                         <rect key="frame" x="0.0" y="0.0" width="54" height="50"/>
@@ -156,7 +156,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jc-SW-2II">
-                                <rect key="frame" x="115" y="78" width="185" height="30"/>
+                                <rect key="frame" x="115" y="42" width="185" height="30"/>
                                 <color key="backgroundColor" red="0.61809086800000002" green="0.1051465645" blue="0.19214779139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Lambert FBLA Website">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -171,7 +171,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNa-TV-ie7">
-                                <rect key="frame" x="115" y="139" width="185" height="30"/>
+                                <rect key="frame" x="115" y="111" width="185" height="30"/>
                                 <color key="backgroundColor" red="0.61809086800000002" green="0.1051465645" blue="0.19214779139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="FBLA Website">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,13 +186,13 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujU-lQ-uQE">
-                                <rect key="frame" x="0.0" y="411" width="414" height="314"/>
+                                <rect key="frame" x="0.0" y="409" width="414" height="316"/>
                                 <connections>
                                     <segue destination="29X-bR-XiO" kind="embed" id="Aw5-MJ-SDk"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local Officer Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbi-oR-Cft">
-                                <rect key="frame" x="95" y="345" width="224" height="34"/>
+                                <rect key="frame" x="95" y="331" width="224" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="84E-i7-zZX"/>
                                 </constraints>
@@ -203,23 +203,23 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ujU-lQ-uQE" firstAttribute="top" secondItem="rbi-oR-Cft" secondAttribute="bottom" constant="32" id="6BP-FE-0H7"/>
+                            <constraint firstItem="ujU-lQ-uQE" firstAttribute="top" secondItem="rbi-oR-Cft" secondAttribute="bottom" constant="44" id="6BP-FE-0H7"/>
                             <constraint firstItem="VNa-TV-ie7" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="115" id="CKe-rp-wTr"/>
-                            <constraint firstItem="WWQ-hD-RCn" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="topMargin" constant="273" id="Cqc-dz-CKq"/>
+                            <constraint firstItem="WWQ-hD-RCn" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="topMargin" constant="247" id="Cqc-dz-CKq"/>
                             <constraint firstItem="ujU-lQ-uQE" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" id="DAM-Id-zk7"/>
-                            <constraint firstItem="6c6-Gv-Bwi" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="topMargin" constant="203" id="GsN-tx-STc"/>
+                            <constraint firstItem="6c6-Gv-Bwi" firstAttribute="top" secondItem="era-1K-hav" secondAttribute="topMargin" constant="177" id="GsN-tx-STc"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="rbi-oR-Cft" secondAttribute="trailing" constant="95" id="O7m-9t-MAf"/>
                             <constraint firstItem="rbi-oR-Cft" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="95" id="OkE-7P-mp2"/>
-                            <constraint firstItem="8Jc-SW-2II" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="78" id="RGf-0M-Ceo"/>
+                            <constraint firstItem="8Jc-SW-2II" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="42" id="RGf-0M-Ceo"/>
                             <constraint firstItem="8Jc-SW-2II" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="115" id="S44-36-ZPL"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="VNa-TV-ie7" secondAttribute="trailing" constant="114" id="T0K-XZ-iRb"/>
                             <constraint firstItem="6c6-Gv-Bwi" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="115" id="VQp-LR-VYv"/>
                             <constraint firstItem="WWQ-hD-RCn" firstAttribute="leading" secondItem="01X-hs-OJg" secondAttribute="leading" constant="48" id="a9I-aW-2Hy"/>
-                            <constraint firstItem="rbi-oR-Cft" firstAttribute="top" secondItem="WWQ-hD-RCn" secondAttribute="bottom" constant="22" id="aeh-9X-n98"/>
+                            <constraint firstItem="rbi-oR-Cft" firstAttribute="top" secondItem="WWQ-hD-RCn" secondAttribute="bottom" constant="34" id="aeh-9X-n98"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="8Jc-SW-2II" secondAttribute="trailing" constant="114" id="e4t-sU-CAb"/>
                             <constraint firstItem="ujU-lQ-uQE" firstAttribute="bottom" secondItem="01X-hs-OJg" secondAttribute="bottom" id="elB-3Y-Rj0"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="6c6-Gv-Bwi" secondAttribute="trailing" constant="114" id="nfP-LF-Quy"/>
-                            <constraint firstItem="VNa-TV-ie7" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="139" id="pEJ-fj-M2h"/>
+                            <constraint firstItem="VNa-TV-ie7" firstAttribute="top" secondItem="01X-hs-OJg" secondAttribute="top" constant="111" id="pEJ-fj-M2h"/>
                             <constraint firstItem="ujU-lQ-uQE" firstAttribute="centerX" secondItem="rbi-oR-Cft" secondAttribute="centerX" id="xJV-aD-ODz"/>
                             <constraint firstItem="01X-hs-OJg" firstAttribute="trailing" secondItem="WWQ-hD-RCn" secondAttribute="trailing" constant="48" id="z3w-9Z-0wi"/>
                         </constraints>
@@ -241,7 +241,7 @@
             <objects>
                 <tableViewController id="29X-bR-XiO" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7UT-jt-0ig">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
@@ -1216,12 +1216,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chat" largeTitleDisplayMode="always" id="17O-4X-yfZ">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="9Qm-Qf-9Ia">
-                            <connections>
-                                <action selector="addButtonClicked:" destination="Zq3-EF-V6h" id="kyE-tK-2ah"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="7UX-S8-zq8">
+                                <connections>
+                                    <action selector="addSingleButtonClicked:" destination="Zq3-EF-V6h" id="jex-Et-s5K"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="9Qm-Qf-9Ia">
+                                <connections>
+                                    <action selector="addButtonClicked:" destination="Zq3-EF-V6h" id="kyE-tK-2ah"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="9Qm-Qf-9Ia" id="RRW-sI-V33"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEt-FO-aQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1273,7 +1283,7 @@
             <objects>
                 <tableViewController id="95n-IO-9Az" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rD7-KS-A0k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="578"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
@@ -1458,7 +1468,7 @@ FBLA is an important partner in the success of school-to-work programs, business
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIE-09-TbT">
-                                <rect key="frame" x="0.0" y="69" width="414" height="578"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <connections>
                                     <segue destination="95n-IO-9Az" kind="embed" id="VWS-wH-Pfl"/>
                                 </connections>
@@ -1466,8 +1476,8 @@ FBLA is an important partner in the success of school-to-work programs, business
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nEv-80-djh" firstAttribute="bottom" secondItem="dIE-09-TbT" secondAttribute="bottom" constant="78" id="8PA-KK-Amb"/>
-                            <constraint firstItem="dIE-09-TbT" firstAttribute="top" secondItem="nEv-80-djh" secondAttribute="top" constant="69" id="Htf-fT-cHV"/>
+                            <constraint firstItem="nEv-80-djh" firstAttribute="bottom" secondItem="dIE-09-TbT" secondAttribute="bottom" id="8PA-KK-Amb"/>
+                            <constraint firstItem="dIE-09-TbT" firstAttribute="top" secondItem="nEv-80-djh" secondAttribute="top" id="Htf-fT-cHV"/>
                             <constraint firstItem="dIE-09-TbT" firstAttribute="leading" secondItem="nEv-80-djh" secondAttribute="leading" id="Wjb-eP-omD"/>
                             <constraint firstItem="dIE-09-TbT" firstAttribute="trailing" secondItem="nEv-80-djh" secondAttribute="trailing" id="nCP-3F-Tcd"/>
                         </constraints>
@@ -1478,7 +1488,7 @@ FBLA is an important partner in the success of school-to-work programs, business
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ny3-Tp-bA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="-2288"/>
+            <point key="canvasLocation" x="1140.5797101449277" y="-2288.1696428571427"/>
         </scene>
         <!--User Info-->
         <scene sceneID="Zbs-cu-Xqy">
@@ -1846,6 +1856,7 @@ FBLA is an important partner in the success of school-to-work programs, business
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
     </resources>
 </document>
