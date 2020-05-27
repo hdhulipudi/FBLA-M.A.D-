@@ -122,7 +122,8 @@ class QRScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsD
 
                                 if let document = document, document.exists {
                                 let firstName = document.get("firstName") as! String
-                                    db.collection("events").document(self.currentEventID).collection("users1").document(self.uuid).setData(["name" : firstName])
+                                let lastName = document.get("lastName") as! String
+                                    db.collection("events").document(self.currentEventID).collection("users1").document(self.uuid).setData(["firstName" : firstName, "lastName": lastName])
                                     self.qrCodeValidity = true
                                     //EventViewController().getSignUpStatus(eventID: self.currentEventID)
                                 
